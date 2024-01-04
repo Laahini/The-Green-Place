@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../media/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Current Jobs | The Green Place</title>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/nice-forms.css@0.1.7/dist/nice-forms.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <link href="../styles/styles.css" rel="stylesheet">
+  <link href="../styles/application.css" rel="stylesheet">
+  <link href="../styles/jobs.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8e3d02b138.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--NAV-->
+  <div id="nav" class="header">
+    <a class="menu-icon" href="../index.html">
+      <img id="logo" src="../media/logo.png">
+    </a>
+    <div class="header-menu">
+    	<a href="../index.html" class="menu-link2">Home</a>
+      <a href="../about.html" class="menu-link2">About</a>
+      <a href="../projects.html" class="menu-link2">Projects</a>
+    	<a href="../careers.html" class="menu-link2">Careers</a>
+    	<a href="../contact.html" class="menu-link2">Contact</a>
+    </div>
+  </div>
+
+  <nav id="mobileNav">
+    <div class="mobile-two">
+			<div class="header">
+				<div class="menu-toggle">
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="mobile-nav">
+				<img src="../media/logo.png" id="logo">
+				<ul>
+					<li><a href="../index.html" class="menu-link2">Home</a></li>
+					<li><a href="../about.html" class="menu-link2">About</a></li>
+					<li><a href="../projects.html" class="menu-link2">Projects</a></li>
+					<li><a href="../careers.html" class="menu-link2">Careers</a></li>
+					<li><a href="../contact.html" class="menu-link2">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+  </nav>
+  <script>
+    $(document).ready(function() {
+      //MOBILE TWO
+      $(".mobile-two .menu-toggle").click(function() {
+      $(this).parent().next(".mobile-nav").toggle(0 , "display");
+      });
+    });
+  </script>
+<!--
+  <nav id="mobileNav">
+    <a href="index.html" id="logo"><img src="../media/logo.png"></a>
+    <input type="checkbox" id="toggle" class="input-toggler">
+    <label for="toggle" class="menu-toggler">
+      <span class="menu-toggler-line" style="margin-top:5px;"></span>
+      <span class="menu-toggler-line"></span>
+      <span class="menu-toggler-line"></span>
+    </label>
+
+    <aside class="sidebar">
+      <ul class="menu">
+        <li><a class="menu-link" href="../index.html">Home</a></li>
+        <li><a class="menu-link" href="../about.html">About</a></li>
+        <li><a class="menu-link" href="../projects.html">Projects</a></li>
+        <li><a class="menu-link" href="../careers.html">Careers</a></li>
+        <li><a class="menu-link" href="../contact.html">Contact</a></li>
+      </ul>
+    </aside>
+  </nav> -->
+
+  <div id="congratsMessage">
+    <div class="confetti">
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div>
+        <h1>Congrats!</h1>
+        <h2>We'll be in touch with you soon</h2>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="nextSteps">
+      <h3>The Hiring Process</h3>
+      <div id="process">
+        <div class="step">
+          <div class="stepHeader">
+            <h5>Step 1</h5>
+            <img class="stepImg" src="../media/apply.png">
+          </div>
+          <div class="stepDescrip">
+            <h4>Apply</h4>
+            <p>Complete and submit all required parts of the application. We invite all applicants to discuss how they have created positive change!</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="stepHeader">
+            <h5>Step 2</h5>
+            <img class="stepImg" src="../media/interview.png">
+          </div>
+          <div class="stepDescrip">
+            <br class="hide">
+            <h4>Interview</h4>
+            <p>After submitting your application, you will receive an email to schedule an interview with one of our staff at The Green Place!</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="stepHeader">
+            <h5>Step 3</h5>
+            <img class="stepImg" src="../media/decision.png">
+          </div>
+          <div class="stepDescrip">
+            <br class="hide"><br class="hide">
+            <h4>Decision</h4>
+            <p>We will manually respond to every applicant. If we decide to hire you, you will receive an official job offer from us!</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <div id="contactJobs">
+      <div>
+        <h4>Want to learn more about The Green Place?</h4>
+        <h1>Sign up to keep in touch</h1>
+          <div>
+            <label>Your email</label>
+            <span>*</span>
+          </div>
+          <div id="emailContainer">
+            <input id="emailInput" type="email" name="email" placeholder="you@thegreenplace.com" required>
+          </div>
+          <div id="roleQuestion">
+            <p>What are you interested in?</p>
+          </div>
+          <div class="contactCategoryGrid">
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>KeepingGreen Newsletter</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Future Jobs and Roles</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Research and Development</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Finance</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Sales and Marketing</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Human Resources</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Project Management</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Design</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Policy and Advocacy</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Operations</span>
+                </label>
+              </div>
+          </div>
+          <button id="jobContactSubmit" onclick="ValidateEmail();">Get Notified</button>
+          <p id="submitted"></p>
+      </div>
+      <div class="contactImg">
+        <img src="../media/envelope.png">
+      </div>
+  </div>
+
+  <script src="../scripts/jobs.js"></script>
+  <script src="../scripts/scripts.js"></script>
+</body>
+
+<footer>
+  <div id="footerGrid">
+    <div>
+      <a href="../index.html" id="logo"><img src="../media/logo2.png" style="padding:10px; padding-left:0px; width:100%; height:70px;"></a>
+      <p>Empowering Change for a Sustainable Future</p>
+      <div id="socials">
+        <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div></div>
+    <div></div>
+    <div id='projectLinks'>
+      <h3>Solutions</h3>
+      <a href="../projects.html">Projects</a>
+      <a href="../projects.html">Products</a>
+      <a href="../projects.html">Service</a>
+    </div>
+    <div id="companyLinks">
+      <h3>Company</h3>
+      <a href="../about.html">About</a>
+      <a href="../about.html">Team</a>
+      <a href="../careers.html">Careers</a>
+    </div>
+  </div>
+  <div id="copyright">
+    <p>Copyright 2023 The Green Place All Rights Reserved.</p>
+  </div>
+</footer>
+</html>

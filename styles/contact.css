@@ -1,0 +1,168 @@
+#contactHeader div{
+  display: flex;
+  align-items: center;
+}
+#contactHeader h1{
+  font-size: 80px;
+  margin-bottom: 15px;
+}
+#contactHeader p{
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+#contactHeader, #contactForm{
+  margin:5%;
+}
+#contactHeader{
+  display: grid;
+  grid-template-columns: auto 40%;
+  margin:5% 10%;
+}
+#contactForm{
+  padding:0% 5%;
+}
+#contactForm div{
+  margin:5% 0%;
+}
+#contactForm input{
+  font-size:20px;
+  width:100%;
+  outline: none;
+  padding:2% 3%;
+  padding-left:0%;
+}
+#contactForm h2{
+  font-size: 24px;
+  margin:auto;
+}
+.questionGrid{
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-column-gap: 5%;
+}
+
+input[type=email],
+input[type=text] {
+  height: 1.5rem;
+  margin: 0 0 1.15rem;
+  width: 100%;
+}
+
+input[type=email],
+input[type=text] {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #74bdb7;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input[type=email]:required,
+input[type=text]:required {
+  box-shadow: none;
+  outline: none;
+}
+.inputs--filled label {
+  transform: translate(0, 0);
+}
+
+label {
+  display: inline-block;
+  transform: translate(0, 1.25rem);
+  transition: 0.15s;
+}
+.text-body {
+  color: black;
+  font: 700 16px sans-serif;
+}
+.text-small-uppercase {
+  color: black;
+  font: 700 1rem sans-serif;
+  letter-spacing: .08rem;
+}
+.contactSubmitBtn{
+  width:100%;
+  background:black;
+  border:1px solid black;
+  padding:1%;
+  border-radius: 10px;
+  font-size: 16px;
+  color:white;
+}
+.contactSubmitBtn:hover{
+  box-shadow: #422800 2px 2px 0 0;
+  background:green;
+}
+.contactSubmitBtn:active {
+  box-shadow: #422800 1px 1px 0 0;
+  transform: translate(2px, 2px);
+}
+#otherContact{
+  padding:5% 10%;
+  background:#BCD0AB;
+}
+.otherGrid{
+  display: grid;
+  grid-template-columns: 25% 25% 30%;
+  grid-column-gap: 10%;
+  margin-bottom: 5%;
+}
+.otherGrid h3{
+  border-bottom: 1px solid black;
+  padding-bottom: 5%;
+}
+.otherGrid a{
+  color:black;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+.otherGrid a:hover{
+  text-decoration: underline;
+}
+@media only screen and (max-width: 992px){
+  .hide{
+    display: none;
+  }
+  .inputs--filled label {
+    transform: none;
+  }
+
+  label {
+    display: inline-block;
+    transform: none;
+    transition: 0.15s;
+    color:#FFFBF2;
+  }
+  .contactSubmitBtn{
+    width:100%;
+    background:black;
+    border:1px solid black;
+    padding:4%;
+    border-radius: 10px;
+    font-size: 16px;
+    color:white;
+  }
+  #contactForm h2{
+    font-size: 20px;
+    text-align: left;
+  }
+  .questionGrid{
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-column-gap: 10%;
+  }
+  .otherGrid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 10%;
+    margin-bottom: 5%;
+  }
+  #otherContact h1{
+    font-size:1.75rem;
+  }
+  .otherGrid a{
+    color:black;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}

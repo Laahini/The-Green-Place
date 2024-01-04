@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="media/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="styles/styles.css" rel="stylesheet">
+  <link href="styles/index.css" rel="stylesheet">
+  <script src="scripts/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <title>The Green Place</title>
+</head>
+<body>
+  <!--NAV-->
+  <div id="nav" class="header">
+    <a class="menu-icon" href="index.html">
+      <img id="logo" src="media/logo.png">
+    </a>
+    <div class="header-menu">
+        <a href="index.html" class="menu-link2">Home</a>
+        <a href="about.html" class="menu-link2">About</a>
+        <a href="projects.html" class="menu-link2">Projects</a>
+        <a href="careers.html" class="menu-link2">Volunteer</a>
+        <a href="resources.html" class="menu-link2">Resources</a>
+        <a href="contact.html" class="menu-link2">Contact</a>
+    </div>
+  </div>
+
+  <nav id="mobileNav">
+    <div class="mobile-two">
+			<div class="header">
+				<div class="menu-toggle">
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="mobile-nav">
+				<img src="media/logo.png" id="logo">
+                <ul>
+                    <li><a href="index.html" class="menu-link2">Home</a></li>
+                    <li><a href="about.html" class="menu-link2">About</a></li>
+                    <li><a href="projects.html" class="menu-link2">Projects</a></li>
+                    <li><a href="careers.html" class="menu-link2">Volunteer</a></li>
+                    <li><a href="resources.html" class="menu-link2">Resources</a></li>
+                    <li><a href="contact.html" class="menu-link2">Contact</a></li>
+                </ul>
+			</div>
+		</div>
+  </nav>
+  <script>
+    $(document).ready(function() {
+      //MOBILE TWO
+      $(".mobile-two .menu-toggle").click(function() {
+      $(this).parent().next(".mobile-nav").toggle(0 , "display");
+      });
+    });
+  </script>
+
+
+
+  <!-- <nav id="mobileNav">
+    <a href="index.html" id="logo"><img src="media/logo.png"></a>
+    <input type="checkbox" id="toggle" class="input-toggler">
+    <label for="toggle" class="menu-toggler">
+      <span class="menu-toggler-line" style="margin-top:5px;"></span>
+      <span class="menu-toggler-line"></span>
+      <span class="menu-toggler-line"></span>
+    </label>
+
+    <aside class="sidebar">
+      <ul class="menu">
+        <li><a class="menu-link" href="index.html">Home</a></li>
+        <li><a class="menu-link" href="about.html">About</a></li>
+        <li><a class="menu-link" href="projects.html">Projects</a></li>
+        <li><a class="menu-link" href="careers.html">Careers</a></li>
+        <li><a class="menu-link" href="contact.html">Contact</a></li>
+      </ul>
+    </aside>
+  </nav> -->
+
+  <div class="video-banner">
+    <video width="100%" height="" muted="”muted”preload=&quot;yes&quot;" autoplay="autoplay" loop="loop">
+      <source src="media/backdrop.mp4">
+    </video>
+    <div class="overlay">
+      <h1>Empowering Change for a Sustainable Future</h1>
+      <h3>For our clients, colleagues, and communities.</h3>
+      <br>
+      <h5>Our combination of research, engineering, environmental, and sustainability leads to just, safe, sustainable, and community-enhancing outcomes that have a positive impact on society.</h5>
+    </div>
+  </div>
+
+  <div id="missionStatement">
+    <h3>Pave the way for a sustainable future, where conscious choices are not just a preference but a way of life.</h3>
+  </div>
+
+  <div id="mediaGrid">
+    <div>
+      <video width="100%"  muted="”muted”preload=&quot;yes&quot;" autoplay="autoplay" loop="loop"><source src="media/vid2.mp4"></video>
+    </div>
+    <div id="callToAction">
+      <div>
+        <h4>Join us in changing the world into a better place.</h4>
+        <button class="universalBtn">Work with Us</button>
+      </div>
+    </div>
+    <div>
+      <video width="100%"  muted="”muted”preload=&quot;yes&quot;" autoplay="autoplay" loop="loop"><source src="media/vid3.mp4"></video>
+    </div>
+  </div>
+
+  <div id="partnerships">
+    <h5>Trusted by</h5>
+    <main>
+    	<div class="wrapper">
+        <ul class="items">
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-06/Grove.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-06/target.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-08/logo-carousel-whole-foods_0.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-06/Thrive.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-06/amazon.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-06/Grove.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-06/target.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-08/logo-carousel-whole-foods_0.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-06/Thrive.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-06/amazon.png"></li>
+        </ul>
+    	</div>
+      <div id="nonDrag">
+        <ul>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-06/Grove.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-06/target.png"></li>
+          <li class="item"><img src="https://www.seventhgeneration.com/sites/default/files/2022-08/logo-carousel-whole-foods_0.png"></li>
+        </ul>
+    	</div>
+    </main>
+    <script>
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    const slider = document.querySelector(".items");
+
+    const end = () => {
+    	isDown = false;
+    	slider.classList.remove("active");
+    };
+
+    const start = (e) => {
+    	isDown = true;
+    	slider.classList.add("active");
+    	startX = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+    	scrollLeft = slider.scrollLeft;
+    };
+
+    const move = (e) => {
+    	if (!isDown) return;
+
+    	e.preventDefault();
+    	const x = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+    	const dist = x - startX;
+    	slider.scrollLeft = scrollLeft - dist;
+    };
+
+    (() => {
+    	slider.addEventListener("mousedown", start);
+    	slider.addEventListener("touchstart", start);
+
+    	slider.addEventListener("mousemove", move);
+    	slider.addEventListener("touchmove", move);
+
+    	slider.addEventListener("mouseleave", end);
+    	slider.addEventListener("mouseup", end);
+    	slider.addEventListener("touchend", end);
+    })();
+
+    </script>
+
+  </div>
+
+  <div id="commitments">
+    <div id="commitDescrip">
+      <h5>Our Commitments</h5>
+      <div class="commitHeader"><h1>We are</h1><span>The Green Place</span></div><br>
+      <p>Established in 2010, The Green Place emerged as a visionary enterprise with humble beginnings, initially based from a small apartment in Harrisburg, PA. Our founders played pivotal roles in shaping the landscape of sustainable business practices, drawing from their expertise in environmental science and sustainability. Our journey began with a commitment to creating a positive impact on the planet, and since then, we have evolved into a leading force in the sustainable products and environmental engineering sector. As we witnessed the global shift towards sustainable practices, The Green Place adapted and thrived, aligning our mission with the urgent need for eco-conscious solutions. <br><br>From the development of eco-friendly consumer products to revolutionary environmental engineering projects, we are dedicated to providing comprehensive and impactful solutions that contribute to a greener and more sustainable world. </p>
+    </div>
+    <div>
+      <img src="https://images.pexels.com/photos/3850512/pexels-photo-3850512.jpeg?auto=compress&cs=tinysrgb&w=800">
+    </div>
+  </div>
+
+  <div id="joinUsFooter">
+    <div>
+      <h3>Join us.</h3>
+      <p>We’re stronger together. Join our community of friends and families committed to the health of the next seven generations. Product news, special offers, ways to make an impact, and so much more.</p>
+    </div>
+    <div id="subForm">
+      <br>
+      <div class="questionGrid" id="email">
+        <span>
+          <label for="name" class="text-small-uppercase">Your Email</label>
+          <input class="text-body" id="username" name="name" type="text" required>
+        </span>
+      </div>
+      <div class="questionGrid" id="submit">
+        <h2></h2>
+        <span>
+          <button class="contactSubmitBtn">Subscribe Now</button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <script>
+    var inputs = document.querySelectorAll("input[type=text], input[type=email]");
+    for (i = 0; i < inputs.length; i++) {
+      var inputEl = inputs[i];
+      if (inputEl.value.trim() !== "") {
+        inputEl.parentNode.classList.add("input--filled");
+      }
+      inputEl.addEventListener("focus", onFocus);
+      inputEl.addEventListener("blur", onBlur);
+    }
+
+    function onFocus(ev) {
+      ev.target.parentNode.classList.add("inputs--filled");
+    }
+
+    function onBlur(ev) {
+      if (ev.target.value.trim() === "") {
+        ev.target.parentNode.classList.remove("inputs--filled");
+      } else if (ev.target.checkValidity() == false) {
+        ev.target.parentNode.classList.add("inputs--invalid");
+        ev.target.addEventListener("input", liveValidation);
+      } else if (ev.target.checkValidity() == true) {
+        ev.target.parentNode.classList.remove("inputs--invalid");
+        ev.target.addEventListener("input", liveValidation);
+      }
+    }
+  </script>
+
+</body>
+
+<footer>
+  <div id="footerGrid">
+    <div>
+      <a href="index.html" id="logo"><img src="media/logo2.png" style=""></a>
+      <p>Empowering Change for a Sustainable Future</p>
+      <div id="socials">
+        <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="hide"></div>
+    <div class="hide"></div>
+    <div class="hide" id='projectLinks'>
+      <h3>Solutions</h3>
+      <a href="projects.html">Projects</a>
+      <a href="projects.html">Products</a>
+      <a href="projects.html">Service</a>
+    </div>
+    <div class="hide" id="companyLinks">
+      <h3>Company</h3>
+      <a href="about.html">About</a>
+      <a href="about.html">Team</a>
+      <a href="careers.html">Careers</a>
+    </div>
+  </div>
+  <div id="copyright">
+    <p>Copyright 2023 The Green Place All Rights Reserved.</p>
+  </div>
+</footer>
+</html>

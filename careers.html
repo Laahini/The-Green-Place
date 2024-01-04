@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="media/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Careers | The Green Place</title>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/nice-forms.css@0.1.7/dist/nice-forms.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <link href="styles/styles.css" rel="stylesheet">
+  <link href="styles/careers.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8e3d02b138.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--NAV-->
+  <div id="nav" class="header">
+    <a class="menu-icon" href="index.html">
+      <img id="logo" src="media/logo.png">
+    </a>
+    <div class="header-menu">
+        <a href="index.html" class="menu-link2">Home</a>
+        <a href="about.html" class="menu-link2">About</a>
+        <a href="projects.html" class="menu-link2">Projects</a>
+        <a href="careers.html" class="menu-link2">Volunteer</a>
+        <a href="resources.html" class="menu-link2">Resources</a>
+        <a href="contact.html" class="menu-link2">Contact</a>
+    </div>
+  </div>
+
+  <nav id="mobileNav">
+    <div class="mobile-two">
+			<div class="header">
+				<div class="menu-toggle">
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="mobile-nav">
+				<img src="media/logo.png" id="logo">
+				<ul>
+					<li><a href="index.html" class="menu-link2">Home</a></li>
+					<li><a href="about.html" class="menu-link2">About</a></li>
+					<li><a href="projects.html" class="menu-link2">Projects</a></li>
+					<li><a href="careers.html" class="menu-link2">Volunteer</a></li>
+                    <li><a href="resources.html" class="menu-link2">Resources</a></li>
+					<li><a href="contact.html" class="menu-link2">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+  </nav>
+  <script>
+    $(document).ready(function() {
+      //MOBILE TWO
+      $(".mobile-two .menu-toggle").click(function() {
+      $(this).parent().next(".mobile-nav").toggle(0 , "display");
+      });
+    });
+  </script>
+
+  <!-- <nav id="mobileNav">
+    <a href="index.html" id="logo"><img src="media/logo.png"></a>
+    <input type="checkbox" id="toggle" class="input-toggler">
+    <label for="toggle" class="menu-toggler">
+      <span class="menu-toggler-line" style="margin-top:5px;"></span>
+      <span class="menu-toggler-line"></span>
+      <span class="menu-toggler-line"></span>
+    </label>
+
+    <aside class="sidebar">
+      <ul class="menu">
+        <li><a class="menu-link" href="index.html">Home</a></li>
+        <li><a class="menu-link" href="about.html">About</a></li>
+        <li><a class="menu-link" href="projects.html">Projects</a></li>
+        <li><a class="menu-link" href="careers.html">Careers</a></li>
+        <li><a class="menu-link" href="contact.html">Contact</a></li>
+      </ul>
+    </aside>
+  </nav> -->
+
+  <div id="careersCover">
+    <div id="coverMessage">
+      <h1>Join the change</h1>
+      <h2>Highly motivated and values-driven, we’re working hard to make the world a more sustainable place.</h2>
+      <br>
+      <button class="jobsBtn" onclick='openJobs()'>Explore all opportunities</button>
+    </div>
+  </div>
+
+  <div id="gallery">
+    <div class="gallery-wrap">
+      <div class="item item-1"></div>
+      <div class="item item-2"></div>
+      <div class="item item-3"></div>
+      <div class="item item-4"></div>
+      <div class="item item-5"></div>
+    </div>
+  </div>
+
+  <div id="teamDissect">
+    <div class="halfView">
+      <div class="facet">
+        <h3>Who we are</h3>
+        <p>We are a community united by a shared vision for a greener, healthier planet. As advocates for mindful living, we have carefully curated a collection of eco-friendly products that reflect our commitment to sustainability. We believe that each one of us plays a pivotal role in the delicate balance of nature, and our choices should reflect a deep respect for the environment. We are stewards of the planet. We are advocates for change. We are a community of purpose. We are The Green Place.</p>
+      </div>
+      <div class="facet">
+        <h3>Where we belong</h3>
+        <p>We want you to feel like you belong here and can thrive here. No two leaves or plants are the same, so neither are we. At The Green Place, we welcome you with an inclusion mindset, one that prioritizes growth through listening and learning. No matter where you come from, or what’s growing in your garden, we want to create a place where you belong.</p>
+      </div>
+      <div class="facet">
+        <h3>Our mission</h3>
+        <p>At The Green Place, we strive to pave the way for a sustainable future, where conscious choices are not just a preference but a way of life. Our mission extends beyond commerce — we are educators, sharing valuable insights and tips to empower you on your journey towards a more sustainable lifestyle. The Green Place is a platform for positive change, where every choice matters. Join us in creating a world where conscious decisions lead to a brighter, more sustainable future.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="values">
+      <h1>Our Values</h1>
+      <div class="fourthSplitGrid">
+        <div class="value">
+          <img class="value-img" src="media/1.png">
+          <p class="value-text">Find a simple answer to a complicated problem.</p>
+        </div>
+        <div class="value">
+          <img class="value-img" src="media/4.png">
+          <p class="value-text">Invest in the company by investing in yourself.</p>
+        </div>
+        <div class="value">
+          <img class="value-img" src="media/2.png">
+          <p class="value-text">Celebrate the little successes.</p>
+        </div>
+        <div class="value">
+          <img class="value-img" src="media/3.png">
+          <p class="value-text">Strive to work towards our mission.</p>
+        </div>
+      </div>
+    </div>
+
+
+  <div id="benefits">
+      <h1>A company that supports you</h1>
+      <div id="basics" class="benefitTemplateGrid">
+        <div class="benefitHeader">
+          <h2>We're Flexible.</h2>
+        </div>
+        <div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#202020" fill-rule="evenodd" d="M5.826 1.466a.498.498 0 0 0-.093.046 9.497 9.497 0 0 0-4.51 12.123 9.5 9.5 0 0 0 11.893 5.34.504.504 0 0 0 .1-.036 9.5 9.5 0 1 0-7.39-17.473ZM17.21 5.5A8.496 8.496 0 0 0 10 1.5c-1.219 0-2.41.262-3.5.754V3.5a2 2 0 0 0 2 2H9A2.5 2.5 0 0 1 11.5 8a1.5 1.5 0 1 0 3 0A2.5 2.5 0 0 1 17 5.5h.211Zm.535 1H17A1.5 1.5 0 0 0 15.5 8a2.5 2.5 0 0 1-5 0A1.5 1.5 0 0 0 9 6.5h-.5a3 3 0 0 1-3-3v-.711A8.498 8.498 0 0 0 1.633 8.5H3A2.5 2.5 0 0 1 5.5 11v1A1.5 1.5 0 0 0 7 13.5 2.5 2.5 0 0 1 9.5 16v2.485a8.498 8.498 0 0 0 3-.361V16a2.5 2.5 0 0 1 2.5-2.5h2.746a8.501 8.501 0 0 0 0-7Zm-.535 8H15a1.5 1.5 0 0 0-1.5 1.5v1.746a8.5 8.5 0 0 0 3.711-3.246ZM8.5 18.367V16A1.5 1.5 0 0 0 7 14.5 2.5 2.5 0 0 1 4.5 12v-1A1.5 1.5 0 0 0 3 9.5H1.514A8.5 8.5 0 0 0 8.5 18.367Z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div>
+              <h4>Work From Anywhere</h4>
+              <p>Employees can work from anywhere around the world. We'll never restrict you from working where you want to work.</p>
+            </div>
+          </div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none"><path fill="#202020" fill-rule="evenodd" d="M10 2a7.5 7.5 0 0 1 5.645 12.438l1.71 1.708a.5.5 0 0 1-.639.765l-.07-.057-1.708-1.709A7.475 7.475 0 0 1 10 17c-1.89 0-3.619-.7-4.938-1.855l-1.708 1.71a.5.5 0 0 1-.765-.639l.057-.07 1.71-1.708A7.5 7.5 0 0 1 10 2Zm0 1a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm-.5 1.5a.5.5 0 0 1 .492.41L10 5v4h2.5a.5.5 0 0 1 .09.992L12.5 10h-3a.5.5 0 0 1-.492-.41L9 9.5V5a.5.5 0 0 1 .5-.5ZM2.232 1.06a2.5 2.5 0 0 1 3.536 0l.337.338a.5.5 0 0 1-.707.707l-.337-.337a1.5 1.5 0 0 0-2.122 0l-.67.671a1.5 1.5 0 0 0 0 2.122l.336.337a.5.5 0 0 1-.707.707l-.337-.337a2.5 2.5 0 0 1 0-3.536l.671-.672ZM17.637.94l.13.121.672.671a2.5 2.5 0 0 1 .122 3.405l-.122.13-.335.337a.5.5 0 0 1-.765-.638l.057-.07.336-.335a1.5 1.5 0 0 0 .103-2.008l-.103-.114-.67-.67a1.5 1.5 0 0 0-2.009-.104l-.114.103-.335.336a.5.5 0 0 1-.765-.638l.057-.07.336-.335A2.5 2.5 0 0 1 17.637.94Z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div>
+              <h4>Design Your Own Schedule</h4>
+              <p>Work at whatever time works for you. We encourage employees to work at least 8 hours a day and no more than 40 hours a week.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="professional" class="benefitTemplateGrid">
+        <div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#202020" fill-rule="evenodd" d="M6.232 1.232A2.5 2.5 0 0 1 8 .5h4A2.5 2.5 0 0 1 14.5 3v1.5H17A2.5 2.5 0 0 1 19.5 7v10a2.5 2.5 0 0 1-2.5 2.5H3A2.5 2.5 0 0 1 .5 17V7A2.5 2.5 0 0 1 3 4.5h2.5V3a2.5 2.5 0 0 1 .732-1.768ZM6.5 4.5h7V3A1.5 1.5 0 0 0 12 1.5H8A1.5 1.5 0 0 0 6.5 3v1.5ZM3 5.5A1.5 1.5 0 0 0 1.5 7v4.915c5.425 2.106 11.575 2.104 17 0V7A1.5 1.5 0 0 0 17 5.5H3Zm15.5 7.485a24.68 24.68 0 0 1-17 0V17A1.5 1.5 0 0 0 3 18.5h14a1.5 1.5 0 0 0 1.5-1.5v-4.015Z" clip-rule="evenodd"></path><path fill="#202020" d="M10.707 10.293a1 1 0 1 0-1.414 1.415 1 1 0 0 0 1.414-1.415Z"></path></svg>
+            </div>
+            <div>
+              <h4>Grow Your Skillset</h4>
+              <p>We offer student benefits catered directly to your needs.</p>
+            </div>
+          </div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none"><path fill="#202020" fill-rule="evenodd" d="M1.232 1.232A2.5 2.5 0 0 1 3 .5h14A2.5 2.5 0 0 1 19.5 3v3a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v3a2.5 2.5 0 0 1-2.5 2.5H3A2.5 2.5 0 0 1 .5 13v-3a.5.5 0 0 1 .5-.5 1.5 1.5 0 0 0 0-3A.5.5 0 0 1 .5 6V3a2.5 2.5 0 0 1 .732-1.768ZM13.5 14.5V13a.5.5 0 0 0-1 0v1.5H3A1.5 1.5 0 0 1 1.5 13v-2.55a2.5 2.5 0 0 0 0-4.9V3A1.5 1.5 0 0 1 3 1.5h9.5V3a.5.5 0 0 0 1 0V1.5H17A1.5 1.5 0 0 1 18.5 3v2.55a2.5 2.5 0 0 0 0 4.9V13a1.5 1.5 0 0 1-1.5 1.5h-3.5Zm-.5-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5Z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div>
+              <h4>Expand Your Network</h4>
+              <p>Connect with people from locations around the world at our annual company-wide retreat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="benefitHeader">
+          <h2>Educational Opportunities</h2>
+        </div>
+      </div>
+      <div id="environment" class="benefitTemplateGrid">
+        <div class="benefitHeader">
+          <h2>Create the Ideal Workplace</h2>
+        </div>
+        <div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><path fill="#202020" fill-rule="evenodd" d="M1.232 1.232A2.5 2.5 0 0 1 3 .5h2A2.5 2.5 0 0 1 7.5 3v2A2.5 2.5 0 0 1 5 7.5H3A2.5 2.5 0 0 1 .5 5V3a2.5 2.5 0 0 1 .732-1.768ZM3 1.5A1.5 1.5 0 0 0 1.5 3v2A1.5 1.5 0 0 0 3 6.5h2A1.5 1.5 0 0 0 6.5 5V3A1.5 1.5 0 0 0 5 1.5H3Zm8.232-.268A2.5 2.5 0 0 1 13 .5h2A2.5 2.5 0 0 1 17.5 3v2A2.5 2.5 0 0 1 15 7.5h-2A2.5 2.5 0 0 1 10.5 5V3a2.5 2.5 0 0 1 .732-1.768ZM13 1.5A1.5 1.5 0 0 0 11.5 3v2A1.5 1.5 0 0 0 13 6.5h2A1.5 1.5 0 0 0 16.5 5V3A1.5 1.5 0 0 0 15 1.5h-2ZM1.232 11.232A2.5 2.5 0 0 1 3 10.5h2A2.5 2.5 0 0 1 7.5 13v2A2.5 2.5 0 0 1 5 17.5H3A2.5 2.5 0 0 1 .5 15v-2a2.5 2.5 0 0 1 .732-1.768ZM3 11.5A1.5 1.5 0 0 0 1.5 13v2A1.5 1.5 0 0 0 3 16.5h2A1.5 1.5 0 0 0 6.5 15v-2A1.5 1.5 0 0 0 5 11.5H3Zm11-1a.5.5 0 0 1 .5.5v2.5H17a.5.5 0 0 1 0 1h-2.5V17a.5.5 0 0 1-1 0v-2.5H11a.5.5 0 0 1 0-1h2.5V11a.5.5 0 0 1 .5-.5Z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div>
+              <h4>Gain Access to the Resources You Need</h4>
+              <p>We'll cover any software and/or hardware expenses necessary that help you do your job.</p>
+            </div>
+          </div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#202020" fill-rule="evenodd" d="M3.232 1.232A2.5 2.5 0 0 1 5 .5h10A2.5 2.5 0 0 1 17.5 3v15.5H19a.5.5 0 0 1 0 1H1a.5.5 0 0 1 0-1h1.5V3a2.5 2.5 0 0 1 .732-1.768ZM3.5 18.5V3A1.5 1.5 0 0 1 5 1.5h10A1.5 1.5 0 0 1 16.5 3v15.5h-4V14a1.5 1.5 0 0 0-1.5-1.5H9A1.5 1.5 0 0 0 7.5 14v4.5h-4Zm5 0h3V14a.5.5 0 0 0-.5-.5H9a.5.5 0 0 0-.5.5v4.5ZM6.5 5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H7a.5.5 0 0 1-.5-.5Zm5 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5Zm-5 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H7a.5.5 0 0 1-.5-.5Zm5 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5Z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div>
+              <h4>Use a Comfortable Workspace</h4>
+              <p>Work in any environment that's comfortable for you and The Green Place will cover the expenses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="health" style="border:none;" class="benefitTemplateGrid">
+        <div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><path fill="#202020" d="M8 0c5.523 0 10 4.477 10 10a9.968 9.968 0 0 1-2.93 7.071.5.5 0 0 1-.706 0L8 10.707.854 17.854a.5.5 0 0 1-.708-.708L7.293 10 .929 3.636a.5.5 0 0 1 0-.707A9.968 9.968 0 0 1 7.999 0Zm7.567 5.125c-.3 1.988-1.9 4.759-4.388 7.346l3.529 3.53A8.965 8.965 0 0 0 17 10c0-1.797-.526-3.47-1.433-4.875ZM6.236 7.529l4.235 4.235c3.307-3.45 4.854-7.167 3.893-8.128-.961-.961-4.678.586-8.128 3.893ZM8 1a8.96 8.96 0 0 0-6 2.292l3.529 3.53c2.587-2.488 5.358-4.089 7.346-4.389A8.958 8.958 0 0 0 8 1Z"></path></svg>
+            </div>
+            <div>
+              <h4>Take Breaks Whenever You Need To</h4>
+              <p>Employees can take up to 40 days off per year that they can use as they wish.</p>
+            </div>
+          </div>
+          <div class="benefitSplitGrid">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none"><path fill="#202020" fill-rule="evenodd" d="M12.134 1.182C12.978.686 13.828.5 14.8.5c2.053 0 4.7 1.915 4.7 5.071 0 1.578-.665 3.254-2.128 5.162-1.463 1.906-3.75 4.079-7.065 6.661a.5.5 0 0 1-.614-.788c3.285-2.56 5.498-4.673 6.885-6.482C17.965 8.318 18.5 6.851 18.5 5.571c0-2.558-2.153-4.071-3.7-4.071-.828 0-1.496.154-2.16.544-.68.398-1.385 1.06-2.252 2.128a.5.5 0 1 1-.776-.63c.898-1.107 1.692-1.874 2.522-2.36Z" clip-rule="evenodd"></path><path fill="#202020" fill-rule="evenodd" d="M7.866 1.182C7.022.686 6.172.5 5.2.5 3.147.5.5 2.415.5 5.571c0 1.578.665 3.254 2.128 5.162 1.463 1.906 3.75 4.079 7.065 6.661a.5.5 0 0 0 .614-.788c-3.285-2.56-5.498-4.673-6.885-6.482C2.035 8.318 1.5 6.851 1.5 5.571 1.5 3.013 3.653 1.5 5.2 1.5c.828 0 1.496.154 2.16.544.68.398 1.385 1.06 2.252 2.128a.5.5 0 0 0 .776-.63c-.898-1.107-1.692-1.874-2.522-2.36Z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div>
+              <h4>Become A Better You</h4>
+              <p>The Green Place will offer a monthly budget for you to promote your own well-being, including a gym membership and health insurance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="benefitHeader">
+          <h2>Invest In Yourself</h2>
+        </div>
+      </div>
+    </div>
+
+  <div id="collage">
+      <img src="media/collage.png">
+    </div>
+
+  <div id="nextSteps">
+      <h3>The Hiring Process</h3>
+      <div id="process">
+        <div class="step">
+          <div class="stepHeader">
+            <h5>Step 1</h5>
+            <img class="stepImg" src="media/apply.png">
+          </div>
+          <div class="stepDescrip">
+            <h4>Apply</h4>
+            <p>Complete and submit all required parts of the application. We invite all applicants to discuss how they have created positive change!</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="stepHeader">
+            <h5>Step 2</h5>
+            <img class="stepImg" src="media/interview.png">
+          </div>
+          <div class="stepDescrip">
+            <h4>Interview</h4>
+            <p>After submitting your application, you will receive an email to schedule an interview with one of our staff at The Green Place!</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="stepHeader">
+            <h5>Step 3</h5>
+            <img class="stepImg" src="media/decision.png">
+          </div>
+          <div class="stepDescrip">
+            <br class="hide"><br class="hide">
+            <h4>Decision</h4>
+            <p>We will manually respond to every applicant. If we decide to hire you, you will receive an official job offer from us!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <script src="scripts/scripts.js"></script>
+
+  <div id="readyApply">
+    <img src="media/ready.png">
+    <h1>Are you ready?</h1>
+    <p>Get to know our hiring process before you apply <br>or find answers to any lingering questions, right here, right now.</p>
+    <button class="jobsBtn" onclick='openJobs()'>Open Positions</button>
+  </div>
+
+</body>
+
+<footer>
+  <div id="footerGrid">
+    <div>
+      <a href="index.html" id="logo"><img src="media/logo2.png" style="padding:10px; padding-left:0px; width:100%; height:70px;"></a>
+      <p>Empowering Change for a Sustainable Future</p>
+      <div id="socials">
+        <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div></div>
+    <div></div>
+    <div id='projectLinks'>
+      <h3>Solutions</h3>
+      <a href="projects.html">Projects</a>
+      <a href="projects.html">Products</a>
+      <a href="projects.html">Service</a>
+    </div>
+    <div id="companyLinks">
+      <h3>Company</h3>
+      <a href="about.html">About</a>
+      <a href="about.html">Team</a>
+      <a href="projects.html">Careers</a>
+    </div>
+  </div>
+  <div id="copyright">
+    <p>Copyright 2023 The Green Place All Rights Reserved.</p>
+  </div>
+</footer>
+</html>

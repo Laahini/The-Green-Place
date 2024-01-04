@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../media/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Current Jobs | The Green Place</title>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/nice-forms.css@0.1.7/dist/nice-forms.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="../styles/styles.css" rel="stylesheet">
+  <link href="../styles/jobs.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8e3d02b138.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--NAV-->
+  <div id="nav" class="header">
+    <a class="menu-icon" href="../index.html">
+      <img id="logo" src="../media/logo.png">
+    </a>
+    <div class="header-menu">
+    	<a href="../index.html" class="menu-link2">Home</a>
+      <a href="../about.html" class="menu-link2">About</a>
+      <a href="../projects.html" class="menu-link2">Projects</a>
+    	<a href="../careers.html" class="menu-link2">Careers</a>
+    	<a href="../contact.html" class="menu-link2">Contact</a>
+    </div>
+  </div>
+  <nav id="mobileNav">
+    <div class="mobile-two">
+			<div class="header">
+				<div class="menu-toggle">
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="mobile-nav">
+				<img src="../media/logo.png" id="logo">
+				<ul>
+					<li><a href="../index.html" class="menu-link2">Home</a></li>
+					<li><a href="../about.html" class="menu-link2">About</a></li>
+					<li><a href="../projects.html" class="menu-link2">Projects</a></li>
+					<li><a href="../careers.html" class="menu-link2">Careers</a></li>
+					<li><a href="../contact.html" class="menu-link2">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+  </nav>
+  <script>
+    $(document).ready(function() {
+      //MOBILE TWO
+      $(".mobile-two .menu-toggle").click(function() {
+      $(this).parent().next(".mobile-nav").toggle(0 , "display");
+      });
+    });
+  </script>
+<!--
+  <nav id="mobileNav">
+    <a href="index.html" id="logo"><img src="../media/logo.png"></a>
+    <input type="checkbox" id="toggle" class="input-toggler">
+    <label for="toggle" class="menu-toggler">
+      <span class="menu-toggler-line" style="margin-top:5px;"></span>
+      <span class="menu-toggler-line"></span>
+      <span class="menu-toggler-line"></span>
+    </label>
+
+    <aside class="sidebar">
+      <ul class="menu">
+        <li><a class="menu-link" href="../index.html">Home</a></li>
+        <li><a class="menu-link" href="../about.html">About</a></li>
+        <li><a class="menu-link" href="../projects.html">Projects</a></li>
+        <li><a class="menu-link" href="../careers.html">Careers</a></li>
+        <li><a class="menu-link" href="../contact.html">Contact</a></li>
+      </ul>
+    </aside>
+  </nav> -->
+
+  <div class="jobBody">
+    <div class="sticky jobMeta">
+      <h1>Sustainable Systems Analyst</h1>
+      <div>
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Napa, CA</h3>
+      </div>
+      <br>
+      <button class="applyJobBtn" onclick="applyJob('job4');">Apply Now</button>
+    </div>
+    <div class="jobDetails">
+      <div class="categoryContainer">
+        <div class="jobCategory">
+          <h3>Research & Development</h3>
+        </div>
+        <div></div>
+      </div>
+      <h4 class="deptMessage">We are looking for a structured and results oriented Senior Stock Plan Administrator to join our Total Compensation & HR Insights team.</h4>
+      <div class="tags">
+        <div class="location">
+          <p>Location</p>
+          <h3>Napa, CA</h3>
+        </div>
+        <div class="workType">
+          <p>Job Type</p>
+          <h3>Full-Time Contractor</h3>
+        </div>
+      </div>
+      <div class="jobDescription">
+        You will play an important role to support our Employees long term equity plans. You're a strong communicator with high integrity and can think analytically. In return for your great efforts, we will offer you a stimulating and challenging role in an exciting and fast-paced international organization.
+You will work in a team environment with a strong sense of urgency and the ability to take complex items and make them digestible to all levels of the organization
+      </div>
+      <h2>What You'll Do</h2>
+      <div id="responsibilities">
+        <ul>
+          <li>Provide support related to our Employee long term equity plan, including managing our monthly grant and vest process</li>
+          <li>Answering daily questions from employees and managers</li>
+          <li>Support in exercise process</li>
+          <li>Consistently improve our equity processes</li>
+          <li>Become an expert within our equity systems</li>
+        </ul>
+      </div>
+      <h2>Who You Are</h2>
+      <div id="qualifications">
+        <ul>
+          <li>Provide support related to our Employee long term equity plan, including managing our monthly grant and vest process</li>
+          <li>Answering daily questions from employees and managers</li>
+          <li>Support in exercise process</li>
+          <li>Consistently improve our equity processes</li>
+          <li>Become an expert within our equity systems</li>
+        </ul>
+      </div>
+      <h2>What We Offer You</h2>
+      <div id="benefits">
+        <div  >
+          <p>We offer student benefits catered directly to your needs.</p>
+        </div>
+        <div  >
+          <p>Extensive learning opportunities, through our dedicated team, GreenHouse.</p>
+        </div>
+        <div  >
+
+          <p>Employees can take up to 40 days off per year that they can use as they wish.</p>
+        </div>
+        <div  >
+          <p>Work at whatever time works for you. We encourage employees to work at least 8 hours a day and no more than 40 hours a week.</p>
+        </div>
+      </div>
+      <h2>Learn About Life at The Green Place</h2>
+      <p id="culture">The United States base range for this position is $85,329 - $121,898, plus equity. The benefits available for this position include health insurance, six month paid parental leave, 401(k) retirement plan, monthly meal allowance, 23 paid days off, 13 paid flexible holidays, paid sick leave. These ranges may be modified in the future.
+
+The Green Place is an equal opportunity employer. You are welcome at The Green Place for who you are, no matter where you come from, what you look like, or what’s growing in your garden. Our platform is for everyone, and so is our workplace. The more voices we have represented and amplified in our business, the more we will all thrive, contribute, and be forward-thinking! So bring us your personal experience, your perspectives, and your background. </p>
+      <br>
+      <div id="questions">
+        <button class="arrow-button">Find our how we hire<i id="arrow" class="fa-solid fa-circle-arrow-right fa-2x"></i></button>
+      </div>
+      <div id="jobBtnContainer"><button onclick="applyJob('job4');" class="applyJobBtn">Apply</button></div>
+    </div>
+  </div>
+
+  <script src="../scripts/scripts.js"></script>
+</body>
+
+<footer>
+  <div id="footerGrid">
+    <div>
+      <a href="../index.html" id="logo"><img src="../media/logo2.png" style="padding:10px; padding-left:0px; width:100%; height:70px;"></a>
+      <p>Empowering Change for a Sustainable Future</p>
+      <div id="socials">
+        <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div></div>
+    <div></div>
+    <div id='projectLinks'>
+      <h3>Solutions</h3>
+      <a href="../projects.html">Projects</a>
+      <a href="../projects.html">Products</a>
+      <a href="../projects.html">Service</a>
+    </div>
+    <div id="companyLinks">
+      <h3>Company</h3>
+      <a href="../about.html">About</a>
+      <a href="../about.html">Team</a>
+      <a href="../careers.html">Careers</a>
+    </div>
+  </div>
+  <div id="copyright">
+    <p>Copyright 2023 The Green Place All Rights Reserved.</p>
+  </div>
+</footer>
+</html>

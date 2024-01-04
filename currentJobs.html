@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="media/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Current Jobs | The Green Place</title>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/nice-forms.css@0.1.7/dist/nice-forms.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="styles/styles.css" rel="stylesheet">
+  <link href="styles/jobs.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8e3d02b138.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--NAV-->
+  <div id="nav" class="header">
+    <a class="menu-icon" href="index.html">
+      <img id="logo" src="media/logo.png">
+    </a>
+    <div class="header-menu">
+        <a href="index.html" class="menu-link2">Home</a>
+        <a href="about.html" class="menu-link2">About</a>
+        <a href="projects.html" class="menu-link2">Projects</a>
+        <a href="careers.html" class="menu-link2">Volunteer</a>
+        <a href="resources.html" class="menu-link2">Resources</a>
+        <a href="contact.html" class="menu-link2">Contact</a>
+    </div>
+  </div>
+
+  <nav id="mobileNav">
+    <div class="mobile-two">
+			<div class="header">
+				<div class="menu-toggle">
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="mobile-nav">
+				<img src="media/logo.png" id="logo">
+                <ul>
+                    <li><a href="index.html" class="menu-link2">Home</a></li>
+                    <li><a href="about.html" class="menu-link2">About</a></li>
+                    <li><a href="projects.html" class="menu-link2">Projects</a></li>
+                    <li><a href="careers.html" class="menu-link2">Volunteer</a></li>
+                    <li><a href="resources.html" class="menu-link2">Resources</a></li>
+                    <li><a href="contact.html" class="menu-link2">Contact</a></li>
+                </ul>
+			</div>
+		</div>
+  </nav>
+  <script>
+    $(document).ready(function() {
+      //MOBILE TWO
+      $(".mobile-two .menu-toggle").click(function() {
+      $(this).parent().next(".mobile-nav").toggle(0 , "display");
+      });
+    });
+  </script>
+  <!-- <nav id="mobileNav">
+    <a href="index.html" id="logo"><img src="media/logo.png"></a>
+    <input type="checkbox" id="toggle" class="input-toggler">
+    <label for="toggle" class="menu-toggler">
+      <span class="menu-toggler-line" style="margin-top:5px;"></span>
+      <span class="menu-toggler-line"></span>
+      <span class="menu-toggler-line"></span>
+    </label>
+
+    <aside class="sidebar">
+      <ul class="menu">
+        <li><a class="menu-link" href="index.html">Home</a></li>
+        <li><a class="menu-link" href="about.html">About</a></li>
+        <li><a class="menu-link" href="projects.html">Projects</a></li>
+        <li><a class="menu-link" href="careers.html">Careers</a></li>
+        <li><a class="menu-link" href="contact.html">Contact</a></li>
+      </ul>
+    </aside>
+  </nav> -->
+
+  <div id="careerCoverText">
+    <span id="element"></span>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Hey, want to join the <i>change</i>?', 'Join the <i>change</i>. '],
+        typeSpeed: 50,
+      });
+    </script>
+  </div>
+
+
+
+
+  <div id="jobSearchFilters">
+    <div class="filtersSplitGrid">
+      <div class="checkbox-dropdown">
+        Volunteer Interests
+        <ul class="checkbox-dropdown-list">
+          <li class="checkboxes__item">
+            <label class="check" for="engineering">
+              <input id="engineering" name="careerType" type="checkbox" value="engineering"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspEngineering</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="rAndD">
+              <input id="rAndD" name="careerType" type="checkbox" value="rAndD"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspResearch and Development</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="projectManagement">
+              <input id="projectManagement" name="careerType" type="checkbox" value="projectManagement"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspProject Management</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="design">
+              <input id="design" name="careerType" type="checkbox" value="design"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspDesign</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="salesAndMarketing">
+              <input id="salesAndMarketing" name="careerType" type="checkbox" value="salesAndMarketing"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspSales & Marketing</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="finance">
+              <input id="finance" name="careerType" type="checkbox" value="finance"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspFinance</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="policy">
+              <input id="policy" name="careerType" type="checkbox" value="policy"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspPolicy & Advocacy</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="operations">
+              <input id="operations" name="careerType" type="checkbox" value="operations"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspOperations</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="humanresources">
+              <input id="humanresources" name="careerType" type="checkbox" value="humanresources"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspHuman Resources</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="checkbox-dropdown">
+        Choose Location
+        <ul class="checkbox-dropdown-list">
+          <li class="checkboxes__item">
+            <label class="check" for="pittsburgh">
+              <input id="pittsburgh" name="location" type="checkbox" value="pittsburgh"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspPittsburgh, PA</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="newyork">
+              <input id="newyork" name="location" type="checkbox" value="newyork"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspNew York City, NY</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="boulder">
+              <input id="boulder" name="location" type="checkbox" value="boulder"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspBoulder, CO</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="napa">
+              <input id="napa" name="location" type="checkbox" value="napa"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspNapa, CA</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="remote">
+              <input id="remote"name="location" type="checkbox" value="remote"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbspRemote</span>
+            </label>
+          </li>
+
+        </ul>
+      </div>
+      <div class="checkbox-dropdown">
+        Commitment
+        <ul class="checkbox-dropdown-list">
+          <li class="checkboxes__item">
+            <label class="check" for="permanent">
+              <input id="permanent" name="jobType" type="checkbox" value="permanent"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbsp5+ hours a week</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="careerProgram">
+              <input id="careerProgram" name="jobType" type="checkbox" value="careerProgram"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbsp10+ hours a week</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="internship">
+              <input id="internship" name="jobType" type="checkbox" value="internship"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbsp15+ hours a week</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="short">
+              <input id="short" name="jobType" type="checkbox" value="short"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbsp20+ hours a week</span>
+            </label>
+          </li>
+          <li class="checkboxes__item">
+            <label class="check" for="fullTime">
+              <input id="fullTime" name="jobType" type="checkbox" value="fullTime"  />
+              <div class="box"></div>
+              <span>&nbsp&nbsp&nbsp&nbsp&nbsp30+ hours a week</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="jobBoard">
+    <div id="jobBoardPreview">
+      <div class="jobCard policy remote fullTime">
+        <div class="openJob">
+          <div>
+            <a href="jobs/job1.html"><h1>Community Outreach Coordinator</h1></a>
+            <p>
+                The candidate should have excellent communication skills and a fervor for encouraging community participation in environmental initiatives.
+                Assuming the role of Community Outreach Coordinator means playing a vital part in The Green Place's mission by engaging with communities, promoting a shared sense of responsibility, and encouraging positive change toward a more sustainable future.
+            </p>
+            <div class="tags">
+              <div class="location">
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+                <h3>Remote</h3>
+              </div>
+              <div class="workType">
+                <i class="fa-solid fa-briefcase fa-xl"></i>
+                <h3>30+ hours a week</h3>
+              </div>
+            </div>
+          </div>
+          <div class="categoryContainer">
+            <div class="jobCategory">
+              <h3>Policy & Advocacy</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jobCard projectManagement newyork fullTime">
+        <div class="openJob">
+          <div>
+            <a href="jobs/job2.html"><h1>Sustainability Program Manager</h1></a>
+            <p>We are searching for a capable Sustainability Program Manager to oversee and implement our environmental initiatives. This involves crafting and executing diverse sustainability strategies, evaluating and reducing The Green Place's environmental footprint, and ensuring compliance with regulations.</p>
+            <div class="tags">
+              <div class="location">
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+                <h3>New York City, NY</h3>
+              </div>
+              <div class="workType">
+                <i class="fa-solid fa-briefcase fa-xl"></i>
+                <h3>30+ hours a week</h3>
+              </div>
+            </div>
+          </div>
+          <div class="categoryContainer">
+            <div class="jobCategory">
+              <h3>Project Management</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jobCard policy newyork internship hidden">
+        <div class="openJob">
+          <div>
+            <a href="jobs/job3.html"><h1>Environmental Education Specialist</h1></a>
+            <p>
+                We are looking for an enthusiastic individual to take on the role of Environmental Education Specialist. This position entails creating and executing educational programs aimed at raising awareness about environmental issues and advocating for sustainable practices.
+            </p>
+            <div class="tags">
+              <div class="location">
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+                <h3>New York City, NY</h3>
+              </div>
+              <div class="workType">
+                <i class="fa-solid fa-briefcase fa-xl"></i>
+                <h3>20+ hours a week</h3>
+              </div>
+            </div>
+          </div>
+          <div class="categoryContainer">
+            <div class="jobCategory">
+              <h3>Policy & Advocacy</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jobCard rAndD napa fullTime hidden">
+        <div class="openJob">
+          <div>
+            <a href="jobs/job4.html"><h1>Sustainable Systems Analyst</h1></a>
+            <p>Conduct analysis and optimization of eco-friendly technologies and processes to enhance overall sustainability. Collaborate with cross-functional teams to implement green solutions, reduce environmental impact, and drive innovation</p>
+            <div class="tags">
+              <div class="location">
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+                <h3>Napa, CA</h3>
+              </div>
+              <div class="workType">
+                <i class="fa-solid fa-briefcase fa-xl"></i>
+                <h3>30+ hours a week</h3>
+              </div>
+            </div>
+          </div>
+          <div class="categoryContainer">
+            <div class="jobCategory">
+              <h3>Research and Development</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="showBtnContainer">
+      <button id="showMoreBtn" onclick="showMore();">Show More</button>
+      <p id="shownMessage"></p>
+    </div>
+  </div>
+
+  <div id="contactJobs">
+      <div>
+        <h4>Nothing available that matches your skillset?</h4>
+        <h1>Sign up for future updates</h1>
+          <div>
+            <label>Your email</label>
+            <span>*</span>
+          </div>
+          <div id="emailContainer">
+            <input id="emailInput" type="email" name="email" placeholder="you@thegreenplace.com" required>
+          </div>
+          <div id="roleQuestion">
+            <p>Which roles would you like to be notified about?</p>
+          </div>
+          <div class="contactCategoryGrid">
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>All Roles</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Engineering</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Research and Development</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Finance</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Sales and Marketing</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Human Resources</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Project Management</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Design</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Policy and Advocacy</span>
+                </label>
+              </div>
+              <div>
+                <label class="check">
+                  <input data-command="" type="checkbox" aria-checked="false">
+                  <div class="box"></div>
+                  <span>Operations</span>
+                </label>
+              </div>
+          </div>
+          <button id="jobContactSubmit" onclick="ValidateEmail();">Get Notified</button>
+          <p id="submitted"></p>
+      </div>
+      <div class="contactImg">
+        <img src="media/envelope.png">
+      </div>
+  </div>
+  <script src="scripts/scripts.js"></script>
+</body>
+
+<footer>
+  <div id="footerGrid">
+    <div>
+      <a href="index.html" id="logo"><img src="media/logo2.png" style="padding:10px; padding-left:0px; width:100%; height:70px;"></a>
+      <p>Empowering Change for a Sustainable Future</p>
+      <div id="socials">
+        <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div></div>
+    <div></div>
+    <div id='projectLinks'>
+      <h3>Solutions</h3>
+      <a href="projects.html">Projects</a>
+      <a href="projects.html">Products</a>
+      <a href="projects.html">Service</a>
+    </div>
+    <div id="companyLinks">
+      <h3>Company</h3>
+      <a href="about.html">About</a>
+      <a href="about.html">Team</a>
+      <a href="careers.html">Careers</a>
+    </div>
+  </div>
+  <div id="copyright">
+    <p>Copyright 2023 The Green Place All Rights Reserved.</p>
+  </div>
+</footer>
+</html>

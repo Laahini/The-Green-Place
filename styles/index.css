@@ -1,0 +1,410 @@
+.video-banner {
+  position: relative;
+  z-index:-3;
+}
+.video-banner .overlay {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 100;
+  color:#FFFBF2;
+}
+.overlay h1{
+  font-size: 90px;
+  margin-bottom: 0;
+}
+.overlay h3{
+  font-size: 30px;
+  margin-bottom:0;
+}
+.overlay h5{
+  font-size: 20px;
+  margin-top: 0;
+  margin-right:45%;
+  font-weight: normal;
+}
+.universalBtn {
+  background-color: black;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  color: #FFFBF2;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.universalBtn:hover {
+  background-color: #FFFBF2;
+  color:black;
+}
+.universalBtn:active {
+  box-shadow: #422800 1px 1px 0 0;
+  transform: translate(2px, 2px);
+}
+#missionStatement{
+  padding:5%;
+  background: #182626;
+  margin-top: -1%;
+  color:#FFFBF2;
+}
+#missionStatement h3{
+  font-size: 40px;
+  text-align: center;
+  line-height: 60px;
+  padding:0% 15%;
+}
+#mediaGrid{
+  padding:5%;
+  display:grid;
+  grid-template-columns: 25% 40% 25%;
+  grid-column-gap:5%;
+}
+#mediaGrid video{
+  border-radius: 20px;
+}
+#callToAction{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  width:100%;
+  height:auto;
+  border-radius: 20px;
+  border:1px solid black;
+}
+#callToAction h4{
+  font-size: 35px;
+  margin:5% 10%;
+}
+#joinUsFooter
+{
+  display: grid;
+  grid-template-columns: 50% 40%;
+  grid-column-gap: 10%;
+  padding:5% 5%;
+  background: #182626;
+  color:#FFFBF2;
+}
+#joinUsFooter h3{
+  font-size: 40px;
+  margin-bottom:5px;
+  margin-top:5px;
+}
+#joinUsFooter p{
+  font-size: 18px;
+  margin-bottom:5px;
+}
+#subForm input{
+  font-size:20px;
+  width:100%;
+  outline: none;
+  padding:2% 3%;
+  padding-left:0%;
+}
+#subForm h2{
+  font-size: 24px;
+  margin:auto;
+}
+
+input[type=email],
+input[type=text] {
+  height: 2.5rem;
+  margin: 0 0 1.15rem;
+  width: 100%;
+  color:#FFFBF2;
+}
+
+input[type=email],
+input[type=text] {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #74bdb7;
+  box-sizing: border-box;
+  outline: none;
+  color:#FFFBF2;
+}
+
+input[type=email]:required,
+input[type=text]:required {
+  box-shadow: none;
+  outline: none;
+  color:#FFFBF2;
+}
+.inputs--filled label {
+  transform: translate(0, 0);
+}
+
+label {
+  display: inline-block;
+  transform: translate(0, 1.25rem);
+  transition: 0.15s;
+  color:#FFFBF2;
+}
+
+.text-body {
+  color:#FFFBF2;
+  font: 700 16px sans-serif;
+}
+.text-small-uppercase {
+  color:#FFFBF2;
+  font: 700 1rem sans-serif;
+  letter-spacing: .08rem;
+}
+.contactSubmitBtn{
+  width:40%;
+  background:#FFFBF2;
+  border:1px solid black;
+  padding:3% 4%;
+  border-radius: 50px;
+  font-size: 16px;
+  color:black;
+}
+.contactSubmitBtn:hover{
+  box-shadow: #422800 2px 2px 0 0;
+  background:#BCD0AB;
+  color: black;
+}
+.contactSubmitBtn:active {
+  box-shadow: #422800 1px 1px 0 0;
+  transform: translate(2px, 2px);
+}
+
+
+
+
+#commitments{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-column-gap: 10%;
+  padding:5%;
+}
+#commitments img{
+  width:100%;
+  margin:5%;
+  border-radius: 20px;
+  margin-left: 0%;
+}
+#commitDescrip{
+  margin:5%;
+  margin-right: 0%;
+}
+.commitHeader{
+  margin-top:2%;
+}
+.commitHeader h1{
+  display: inline;
+  margin-right:3%;
+}
+.commitHeader span{
+  font-size: 35px;
+  padding:2%;
+  background: #182626;
+  color:#FFFBF2;
+  border-radius: 20px;
+}
+
+#nonDrag{
+  display:none;
+}
+#nonDrag ul{
+  display: flex;
+  justify-content: space-around;
+}
+#partnerships{
+  text-align:center;
+  background: #f5eedf;
+  padding-top:1%;
+  padding-bottom: 4%;
+}
+#partnerships h5{
+  font-size: 18px;
+}
+#partnerships ul {
+  padding: 0;
+}
+#partnerships li {
+  list-style: none;
+}
+#partnerships main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#partnerships .wrapper {
+  position: relative;
+}
+#partnerships .wrapper:before, #partnerships .wrapper:after {
+  position: absolute;
+  top: 0;
+
+  content: "";
+  display: block;
+  width: 20px;
+  height: 100%;
+}
+#partnerships .wrapper:before {
+  left: 0;
+}
+#partnerships .wrapper:after {
+  right: 0;
+}
+#partnerships .items {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0;
+  cursor: pointer;
+}
+#partnerships .items.active {
+  cursor: grab;
+}
+#partnerships .item {
+  display: inline-block;
+  margin-left: 20px;
+  user-select: none;
+  width: 20%;
+  height: 100px;
+  color: #222;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 130px;
+  text-align: center;
+}
+#partnerships .item img{
+  width:auto;
+  height:100px;
+}
+#partnerships .item:last-child {
+  margin-right: 20px;
+}
+@media screen and (min-width: 500px) {
+  .item {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .item {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    margin-left: -20px;
+  }
+
+  .item {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #mediaGrid{
+    height: auto;
+    padding:5%;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-column-gap:0%;
+    grid-row-gap:5%;
+    margin-bottom:5%;
+  }
+  #callToAction{
+    height:35vh;
+  }
+  .video-banner .overlay{
+    top:20%;
+  }
+  .overlay h1{
+    font-size: 2.5rem;
+  }
+  .overlay h3{
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  .overlay h5{
+    display: none;
+  }
+  #missionStatement{
+    margin:0%;
+    margin-top: 0%;
+  }
+  #missionStatement h3{
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  #partnerships{
+    margin:0% 0%;
+    height:auto;
+    margin-top: 30%;
+    margin-bottom: 5%;
+    width:100%;
+    z-index: 0;
+  }
+  .wrapper{
+    display: none;
+  }
+  #nonDrag{
+    display: block;
+  }
+  #commitments{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0%;
+    padding:2% 5%;
+    grid-row-gap: 0%;
+    height:auto;
+    width:100%;
+  }
+  #commitDescrip{
+    margin:0%;
+    margin-top:0%;
+    padding:5%;
+    padding-top: 0%;
+  }
+  .commitHeader{
+    margin-top:0%;
+  }
+  .commitHeader h1{
+    display: block;
+    margin:0%;
+    margin-bottom:2%;
+    margin-right:3%;
+  }
+  .commitHeader span{
+    font-size: 35px;
+    padding: 2% 3%;
+    background: #182626;
+    color:#FFFBF2;
+    border-radius: 20px;
+  }
+  #commitments img{
+    width:90%;
+    margin:5%;
+    border-radius: 20px;
+    margin-top: 0%;
+  }
+  #joinUsFooter
+  {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0%;
+    padding:5% 5%;
+    background: #182626;
+    color:#FFFBF2;
+  }
+  .inputs--filled label {
+    transform: none;
+  }
+
+  label {
+    display: inline-block;
+    transform: none;
+    transition: 0.15s;
+    color:#FFFBF2;
+  }
+}
