@@ -110,7 +110,7 @@
         font-weight: bolder;
     }
 
-#values {
+#taxRebate {
     margin: 4% auto;
     text-align: center;
     background: #182626;
@@ -119,13 +119,13 @@
     margin-top: 0%;
 }
 
-    #values h1, #benefits h1 {
+    #taxRebate h1, #benefits h1 {
         font-size: 45px;
         font-weight: bolder;
         text-align: center;
     }
 
-    #values .fourthSplitGrid {
+    #taxRebate .fourthSplitGrid {
         padding-top: 2%;
     }
 

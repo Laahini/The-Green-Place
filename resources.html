@@ -88,7 +88,6 @@
             <h1>Explore Resources</h1>
             <h2>To help work towards sustainable energy, here are a list of resources curated by volunteers like you.</h2>
             <br>
-            <!--<button class="jobsBtn" onclick='openJobs()'>Explore all opportunities</button>-->
         </div>
     </div>
 
@@ -119,26 +118,66 @@
         </div>
     </div>
 
-    <div id="values">
-        <h1>Our Values</h1>
-        <div class="fourthSplitGrid">
-            <div class="value">
-                <img class="value-img" src="media/1.png">
-                <p class="value-text">Find a simple answer to a complicated problem.</p>
-            </div>
-            <div class="value">
-                <img class="value-img" src="media/4.png">
-                <p class="value-text">Invest in the company by investing in yourself.</p>
-            </div>
-            <div class="value">
-                <img class="value-img" src="media/2.png">
-                <p class="value-text">Celebrate the little successes.</p>
-            </div>
-            <div class="value">
-                <img class="value-img" src="media/3.png">
-                <p class="value-text">Strive to work towards our mission.</p>
-            </div>
+    <div id="taxRebate">
+        <h1>Tax Rebate Info</h1>
+        <p>Did you know? If you use green energy, you could qualify for tax credit!</p>
+        <p>According to the IRS and the recent Inflation Reduction Act, you can gain tax credit equal to 30% of costs of qualifying green energy equipment installed in houses in the United States. This includees solar panels and water heaters, wind turbines, fuel cells, geothermal heat pumps, and battery storage technology.</p>
+        <p>You can use any unused tax credit towards future taxes. Calculate how much tax credit you are eligible for below!</p>
+        
+        <div>
+            <span>
+                <label for="income" class="text-small-uppercase">Enter Gross Income</label>
+                <input class="text-body" id="income" name="name" type="number" placeholder="Gross Income">
+            </span>
+            <br />
+            <br />
+
+            <span>
+                <label for="solarCost" class="text-small-uppercase">Enter cost to install new solar panels</label>
+                <input class="text-body" id="solarCost" name="name" type="number" placeholder="Cost of Solar Panels">
+            </span>
+            <br />
+            <br />
+
+            <p>Is your electric car new or used? Used cars are determined to be cars that are at least two years old.</p>
+            <span>
+                <input class="text-body" id="electricVehicleCondition" value="new" name="name" type="radio">
+                <label for="electricVehicleCondition" class="text-small-uppercase">New</label>
+                <br />
+                <input class="text-body" id="electricVehicleCondition" value="used" name="name" type="radio">
+                <label for="electricVehicleCondition" class="text-small-uppercase">Used</label>
+            </span>
+            <br />
+            <span>
+                <label for="electricVehicleCost" class="text-small-uppercase">Enter cost of your electric vehicle</label>
+                <input class="text-body" id="electricVehicleCost" name="name" type="number" placeholder="Cost of Electric Vehicle">
+            </span>
+
+            <br />
+            <br />
+
+            <button id="submitCredit" onclick="calculateCredit()">Calculate Credit</button>
+            <p id="displayCredit"></p>
         </div>
+        
+        <!--<div class="fourthSplitGrid">
+        <div class="value">
+            <img class="value-img" src="media/1.png">
+            <p class="value-text">Find a simple answer to a complicated problem.</p>
+        </div>
+        <div class="value">
+            <img class="value-img" src="media/4.png">
+            <p class="value-text">Invest in the company by investing in yourself.</p>
+        </div>
+        <div class="value">
+            <img class="value-img" src="media/2.png">
+            <p class="value-text">Celebrate the little successes.</p>
+        </div>
+        <div class="value">
+            <img class="value-img" src="media/3.png">
+            <p class="value-text">Strive to work towards our mission.</p>
+        </div>
+    </div>-->
     </div>
 
 

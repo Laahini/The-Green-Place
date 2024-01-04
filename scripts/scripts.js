@@ -104,3 +104,32 @@ function openJobs(){
 function openCareers(){
   location.href="../careers.html";
 }
+
+function calculateCredit() {
+    var creditDisplay = document.getElementById("displayCredit");
+    var income = document.getElementById("income").value;
+
+    // Calculate Solar Credit
+    var solarCost = document.getElementById("solarCost").value;
+    var solarCredit = solarCost * 0.3;
+
+    // Calculate Electric Vehicle Credit
+    var isNew = document.getElementById("electricVehicleCondition").value == "new";
+    var electricVehicleCost = document.getElementById("electricVehicleCost").value;
+
+    if ((isNew && income < 225000 && electricVehicleCost < 80000) || (!isNew && income < 112500 && electricVehicleCost < 25000)) {
+        var electricVehicleCredit = electricVehicleCost * 0.3;
+        if (isNew && electricVehicleCredit > 7500) {
+            electricVehicleCredit = 7500;
+        } else if (!isNew && electricVehicleCredit > 4000) {
+            electricVehicleCredit = 4000;
+        }
+    } else {
+        var electricVehicleCredit = 0;
+    }
+
+    
+
+    var totalCredit = solarCredit;
+    creditDisplay.textContent = totalCredit; //`$${totalCredit.toFixed(2)}`;
+}
