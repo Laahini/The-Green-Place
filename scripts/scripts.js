@@ -105,6 +105,7 @@ function openCareers(){
   location.href="../careers.html";
 }
 
+/*TAX CREDIT AND REBATE CALCULATOR*/
 function CreditAndRebate() {
     var creditDisplay = document.getElementById("displayCredit");
     var rebateDisplay = document.getElementById("displayRebate");
@@ -239,6 +240,10 @@ function CreditAndRebate() {
     var totalRebate = heatPumpRebate + waterHeaterRebate + insulationRebate + stoveRebate + electricWaterHeaterRebate + electricDryerRebate + panelRebate + wiringRebate;
     if (totalRebate > 14000) {
         totalRebate = 14000;
+    }
+    totalCredit -= totalRebate;
+    if (totalCredit < 0) {
+        totalCredit = 0;
     }
 
    
