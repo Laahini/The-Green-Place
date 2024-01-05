@@ -105,8 +105,9 @@ function openCareers(){
   location.href="../careers.html";
 }
 
-function calculateCredit() {
+function CreditAndRebate() {
     var creditDisplay = document.getElementById("displayCredit");
+    var rebateDisplay = document.getElementById("displayRebate");
     var income = document.getElementById("income").value;
 
     // Calculate Solar Credit
@@ -128,8 +129,119 @@ function calculateCredit() {
         var electricVehicleCredit = 0;
     }
 
+    // Calculate Battery Storage Credit
+    var iskWh = document.getElementById("batteryStoragekWh").value == "yes";
+    var batteryStorageCost = document.getElementById("batteryStorageCost").value;
+    if (iskWh) {
+        var batteryStorageCredit = batteryStorageCost * 0.3;
+    } else {
+        var batteryStorageCredit = 0;
+    }
+
+    // Calculate Windmills and Geothermal Credit
+    var windGeoCost = document.getElementById("windGeothermalCost").value;
+    var windGeoCredit = windGeoCost * 0.3;
+
+    // Window, Door, and Energy Property Credit
+    var windowCost = document.getElementById("windowCost").value;
+    var doorAmount = document.getElementById("doorAmount").value;
+    var doorCost = document.getElementById("doorCost").value;
+    var propertyCost = document.getElementById("propertyCost").value;
+    var windowCredit = windowCost * 0.3;
+
+    if (windowCredit > 600) {
+        windowCredit = 600;
+    }
+
+    var doorCredit = doorAmount * doorCost * 0.3;
+
+    if (doorAmount > 1 && doorCredit > 500) {
+        doorCredit = 500;
+    } else if (doorCredit > 250) {
+        doorCredit = 250;
+    }
+
+    var propertyCredit = propertyCost * 0.3;
+    if (propertyCredit > 600) {
+        propertyCredit = 600;
+    }
+
+    var windDoorPropCredit = windowCredit + doorCredit + propertyCredit;
+    if (windDoorPropCredit > 1200) {
+        windDoorPropCredit = 1200;
+    }
+
+    // Heat Pump Credit AND REBATE
+    var heatPumpCost = document.getElementById("heatPumpCost").value;
+    var waterHeaterCost = document.getElementById("waterHeaterCost").value;
+    var heatPumpCredit = heatPumpCost * 0.3;
+    var waterHeaterCredit = waterHeaterCost * 0.3;
+    var heatWaterCredit = heatPumpCredit + waterHeaterCredit;
+    if (heatWaterCredit > 2000) {
+        heatWaterCredit = 2000;
+    }
+
+    if (heatPumpCredit > 0) {
+        var heatPumpRebate = 0.5 * 8000;
+    } else {
+        var heatPumpRebate = 0;
+    }
+
+    if (waterHeaterCredit > 0) {
+        var waterHeaterRebate = 0.5 * 1750;
+    } else {
+        var waterHeaterRebate = 0;
+    }
     
 
-    var totalCredit = solarCredit;
-    creditDisplay.textContent = totalCredit; //`$${totalCredit.toFixed(2)}`;
+    var hasInsulationVentilation = document.getElementById("hasInsulationVentilation").value == "yes";
+    if (hasInsulationVentilation) {
+        var insulationRebate = 0.5 * 1600;
+    } else {
+        var insulationRebate = 0;
+    }
+
+    // Electric Appliance Rebate
+    var stoveCost = document.getElementById("stoveCost").value;
+    var electricWaterHeaterCost = document.getElementById("electricWaterHeaterCost").value;
+    var electricDryerCost = document.getElementById("electricDryerCost").value;
+
+    if (stoveCost > 0) {
+        var stoveRebate = 0.5 * 840;
+    } else {
+        var stoveRebate = 0;
+    }
+
+    if (electricWaterHeaterCost > 0) {
+        var electricWaterHeaterRebate = 0.5 * 1750;
+    } else {
+        var electricWaterHeaterRebate = 0;
+    }
+
+    if (electricDryerCost > 0) {
+        var electricDryerRebate = 0.5 * 840;
+    } else {
+        var electricDryerRebate = 0;
+    }
+
+    // Electric Panel and Wiring Credit AND REBATE
+    var panelCost = document.getElementById("panelCost").value;
+    var wiringCost = document.getElementById("wiringCost").value;
+    var panelWiringCredit = 0.3 * (panelCost + wiringCost);
+    if (panelWiringCredit > 600) {
+        panelWiringCredit = 600;
+    }
+    var panelRebate = 4000 * 0.5;
+    var wiringRebate = 2500 * 0.5;
+    
+
+    var totalCredit = solarCredit + electricVehicleCredit + batteryStorageCredit + windGeoCredit + windDoorPropCredit + heatWaterCredit;
+    var totalRebate = heatPumpRebate + waterHeaterRebate + insulationRebate + stoveRebate + electricWaterHeaterRebate + electricDryerRebate + panelRebate + wiringRebate;
+    if (totalRebate > 14000) {
+        totalRebate = 14000;
+    }
+
+   
+    creditDisplay.textContent = `$${totalCredit.toFixed(2)}`;
+    rebateDisplay.textContent = `$${totalRebate.toFixed(2)}`;
 }

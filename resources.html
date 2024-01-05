@@ -119,45 +119,163 @@
     </div>
 
     <div id="taxRebate">
-        <h1>Tax Rebate Info</h1>
-        <p>Did you know? If you use green energy, you could qualify for tax credit!</p>
-        <p>According to the IRS and the recent Inflation Reduction Act, you can gain tax credit equal to 30% of costs of qualifying green energy equipment installed in houses in the United States. This includees solar panels and water heaters, wind turbines, fuel cells, geothermal heat pumps, and battery storage technology.</p>
+        <h1>Tax Credit and Rebate Calculator</h1>
+        <p>Did you know? If you use green energy, you could qualify for tax credit and/or rebates!</p>
+        <p>According to the IRS and the recent Inflation Reduction Act, you can gain tax credit equal to 30% of costs of qualifying green energy equipment installed in houses in the United States. This includes solar panels, water heaters, wind turbines, fuel cells, geothermal heat pumps, battery storage technology, and more.</p>
         <p>You can use any unused tax credit towards future taxes. Calculate how much tax credit you are eligible for below!</p>
         
         <div>
-            <span>
-                <label for="income" class="text-small-uppercase">Enter Gross Income</label>
-                <input class="text-body" id="income" name="name" type="number" placeholder="Gross Income">
-            </span>
+            <div class="grossIncome">
+                <span>
+                    <label for="income" class="text-small-uppercase">Enter Gross Income</label>
+                    <input class="text-body" id="income" name="name" type="number" placeholder="Gross Income">
+                </span>
+            </div>
+            
             <br />
             <br />
 
-            <span>
-                <label for="solarCost" class="text-small-uppercase">Enter cost to install new solar panels</label>
-                <input class="text-body" id="solarCost" name="name" type="number" placeholder="Cost of Solar Panels">
-            </span>
+            <div class="solar">
+                <span>
+                    <label for="solarCost" class="text-small-uppercase">Enter cost to install new solar panels</label>
+                    <input class="text-body" id="solarCost" name="name" type="number" placeholder="Cost of Solar Panels">
+                </span>
+            </div>
+            
             <br />
             <br />
 
-            <p>Is your electric car new or used? Used cars are determined to be cars that are at least two years old.</p>
-            <span>
-                <input class="text-body" id="electricVehicleCondition" value="new" name="name" type="radio">
-                <label for="electricVehicleCondition" class="text-small-uppercase">New</label>
+            <div class="electricVehicle">
+                <p>Is your electric car new or used? Used cars are determined to be cars that are at least two years old.</p>
+                <span>
+                    <input class="text-body" id="electricVehicleCondition" value="new" name="name" type="radio">
+                    <label for="electricVehicleCondition" class="text-small-uppercase">New</label>
+                    <br />
+                    <input class="text-body" id="electricVehicleCondition" value="used" name="name" type="radio">
+                    <label for="electricVehicleCondition" class="text-small-uppercase">Used</label>
+                </span>
                 <br />
-                <input class="text-body" id="electricVehicleCondition" value="used" name="name" type="radio">
-                <label for="electricVehicleCondition" class="text-small-uppercase">Used</label>
-            </span>
-            <br />
-            <span>
-                <label for="electricVehicleCost" class="text-small-uppercase">Enter cost of your electric vehicle</label>
-                <input class="text-body" id="electricVehicleCost" name="name" type="number" placeholder="Cost of Electric Vehicle">
-            </span>
+                <span>
+                    <label for="electricVehicleCost" class="text-small-uppercase">Enter cost of your electric vehicle</label>
+                    <input class="text-body" id="electricVehicleCost" name="name" type="number" placeholder="Cost of Electric Vehicle">
+                </span>
+
+                <br />
+                <br />
+
+            </div>
+            
+            <div class="batteryStorageTechnology">
+                <p>Does Your Battery Storage Device Have More Than 3 kWh?</p>
+                <span>
+                    <label for="batteryStoragekWh" class="text-small-uppercase">Yes</label>
+                    <input class="text-body" id="batteryStoragekWh" name="name" type="radio" value="yes">
+                </span>
+                <span>
+                    <label for="batteryStoragekWh" class="text-small-uppercase">No</label>
+                    <input class="text-body" id="batteryStoragekWh" name="name" type="radio" value="no">
+                </span>
+                <br />
+                <br />
+                <span>
+                    <label for="batteryStorageCost" class="text-small-uppercase">Enter cost of installing a battery storage device</label>
+                    <input class="text-body" id="batteryStorageCost" name="name" type="number" placeholder="Cost of Battery Storage Device">
+                </span>
+            </div>
 
             <br />
             <br />
 
-            <button id="submitCredit" onclick="calculateCredit()">Calculate Credit</button>
+            <div class="windGeothermal">
+                <span>
+                    <label for="windGeothermalCost" class="text-small-uppercase">Enter cost of installing small windmills, geothermal heat pumps, and other clean energy systems that power your home</label>
+                    <input class="text-body" id="windGeothermalCost" name="name" type="number" placeholder="Cost of Clean Energy System Installation">
+                </span>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="windowDoorEnergyProperty">
+                <span>
+                    <label for="windowCost" class="text-small-uppercase">Enter cost of energy-efficient windows and skylights</label>
+                    <input class="text-body" id="windowCost" name="name" type="number" placeholder="Cost of Windows and Skylights">
+                </span>
+                <br />
+                <span>
+                    <label for="doorAmount" class="text-small-uppercase">Enter amount of energy-efficient doors</label>
+                    <input class="text-body" id="doorAmount" name="name" type="number" placeholder="Amount of Doors">
+                </span>
+                <br />
+                <span>
+                    <label for="doorCost" class="text-small-uppercase">Enter cost of a single energy-efficient door</label>
+                    <input class="text-body" id="doorCost" name="name" type="number" placeholder="Cost of Doors">
+                </span>
+                <br />
+                <span>
+                    <label for="propertyCost" class="text-small-uppercase">Enter cost of electric, natural gas, propane, or oil heat pumps, water heaters, and boilers</label>
+                    <input class="text-body" id="propertyCost" name="name" type="number" placeholder="Cost of Energy Property">
+                </span>
+            </div>
+            <br />
+            <br />
+            <div class="heatPumpAndHeater">
+                <span>
+                    <label for="heatPumpCost" class="text-small-uppercase">Enter cost of energy-efficient heat pump</label>
+                    <input class="text-body" id="heatPumpCost" name="name" type="number" placeholder="Cost of Heat Pump Installation">
+                </span>
+                <br />
+                <span>
+                    <label for="waterHeaterCost" class="text-small-uppercase">Enter cost of energy-efficient heat pump water heater</label>
+                    <input class="text-body" id="waterHeaterCost" name="name" type="number" placeholder="Cost of Heat Pump Water Heater Installation">
+                </span>
+            </div>
+
+            <div class="insulationVentilation">
+                <p>Do you have energy-efficient insulation, ventilation, and/or air sealing for your home?</p>
+                <span>
+                    <label for="hasInsulationVentilation" class="text-small-uppercase">Yes</label>
+                    <input class="text-body" id="hasInsulationVentilation" name="name" type="radio" value="yes">
+                </span>
+                <span>
+                    <label for="batteryStoragekWh" class="text-small-uppercase">No</label>
+                    <input class="text-body" id="hasInsulationVentilation" name="name" type="radio" value="no">
+                </span>
+            </div>
+            <br />
+            <br />
+            <div class="electricAppliance">
+                <span>
+                    <label for="stoveCost" class="text-small-uppercase">Enter cost of electric stove</label>
+                    <input class="text-body" id="stoveCost" name="name" type="number" placeholder="Cost of Electrice Stove">
+                </span>
+                <br />
+                <span>
+                    <label for="electricWaterHeaterCost" class="text-small-uppercase">Enter cost of electric water heater</label>
+                    <input class="text-body" id="electricWaterHeaterCost" name="name" type="number" placeholder="Cost of Electric Water Heater">
+                </span>
+                <br />
+                <span>
+                    <label for="electricDryerCost" class="text-small-uppercase">Enter cost of electric clothes dryer</label>
+                    <input class="text-body" id="electricDryerCost" name="name" type="number" placeholder="Cost of Electric Clothes Dryer">
+                </span>
+            </div>
+            <br />
+            <br />
+            <div class="electricPanelWiring">
+                <span>
+                    <label for="panelCost" class="text-small-uppercase">Enter cost of electric panel</label>
+                    <input class="text-body" id="panelCost" name="name" type="number" placeholder="Cost of Electric Panel Installation">
+                </span>
+                <br />
+                <span>
+                    <label for="wiringCost" class="text-small-uppercase">Enter cost of rewiring upgrades</label>
+                    <input class="text-body" id="paCost" name="name" type="number" placeholder="Cost of Rewiring Upgrade">
+                </span>
+            </div>
+            <button id="submitCredit" onclick="CreditAndRebate()">Calculate Credit and Rebate</button>
             <p id="displayCredit"></p>
+            <p id="displayRebate"></p>
         </div>
         
         <!--<div class="fourthSplitGrid">
