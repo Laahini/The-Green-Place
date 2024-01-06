@@ -13,7 +13,7 @@ function showMore() {
   }
   var button = document.getElementById('showMoreBtn');
   button.classList.add('hidden');
-  document.getElementById('shownMessage').innerHTML="Showing all available jobs";
+  document.getElementById('shownMessage').innerHTML="Showing all available volunteer opportunities";
 }
 
 
