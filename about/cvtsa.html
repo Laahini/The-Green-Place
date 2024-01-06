@@ -11,9 +11,57 @@
         <link rel="stylesheet" href="../styles/about-style.css">
         <link rel="stylesheet" href="../styles/particles/particles.css"/>
         <link rel="stylesheet" href="../styles/ocarousel.css"/>
+        <link href="../styles/styles.css" rel="stylesheet">
+        <link href="../styles/index.css" rel="stylesheet">
     </head>
     <body class="dark-theme">
-        
+      <!--NAV-->
+      <div id="nav" class="header">
+        <a class="menu-icon" href="index.html">
+          <img id="logo" src="../media/logo.png">
+        </a>
+        <div class="header-menu">
+            <a href="../index.html" class="menu-link2">Home</a>
+            <a href="../about.html" class="menu-link2">About</a>
+            <a href="../projects.html" class="menu-link2">Projects</a>
+            <a href="../careers.html" class="menu-link2">Volunteer</a>
+            <a href="../resources.html" class="menu-link2">Resources</a>
+            <a href="../contact.html" class="menu-link2">Contact</a>
+            <a href="cvtsa.html" class="menu-link2">TSA</a>
+            <a href="cte.html" class="menu-link2">CTE</a>
+        </div>
+      </div>
+
+      <nav id="mobileNav">
+        <div class="mobile-two">
+          <div class="header">
+            <div class="menu-toggle">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="mobile-nav">
+            <img src="../media/logo.png" id="logo">
+                    <ul>
+                        <li><a href="../index.html" class="menu-link2">Home</a></li>
+                        <li><a href="../about.html" class="menu-link2">About</a></li>
+                        <li><a href="../projects.html" class="menu-link2">Projects</a></li>
+                        <li><a href="../careers.html" class="menu-link2">Volunteer</a></li>
+                        <li><a href="../resources.html" class="menu-link2">Resources</a></li>
+                        <li><a href="../contact.html" class="menu-link2">Contact</a></li>
+                        <li><a href="../about/about.html" class="menu-link2">Other</a></li>
+                    </ul>
+          </div>
+        </div>
+      </nav>
+      <script>
+        $(document).ready(function() {
+          //MOBILE TWO
+          $(".mobile-two .menu-toggle").click(function() {
+          $(this).parent().next(".mobile-nav").toggle(0 , "display");
+          });
+        });
+      </script>
         <div id="indexcarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="vidCover">
@@ -115,119 +163,10 @@
               </div>
             </div>
           </div>
-          <div id="creed">
-            <h1>CREED</h1>
-            <hr>
-            <p>I believe that technology can be used in positive ways for the improvement of the world and that it is my duty to strive for this betterment. </p>
-             <hr>
-              <p>I believe in the use of cooperation, teamwork, honesty, and ethics to create solutions for the future. </p>
-              <hr>
-              <p>I believe that I should be committed to developing new technologies and educating others about technology and its benefits. </p>
-              <hr>
-              <p> I will expand my knowledge and be open to new ideas while maintaining proper scientific knowledge and facts. </p>
-              <hr>
-              <p>I will continue efforts to increase the influence of technology in our world and display its benefits to the world.</p>
-              <hr>
-          </div>
+          
           </div>
 
-          <div id="tsapicsBanner">
-          <!-- <br>
-            <div class="row">
-              <div class="column123" >
-              <img src="../media/tsapics/tsa.png" style="width:100%" class="zoom">
-              <img src="../media/tsapics/tsa1.png" style="width:100%" class="zoom">
-              <img src="../media/tsapics/tsa2.png" style="width:100%" class="zoom">
-              </div>
-              <div class="column123">
-              <img src="../media/tsapics/tsa3.png" style="width:100%" class="zoom">
-              <img src="../media/tsapics/tsa4.png" style="width:100%" class="zoom">
-              <img src="../media/tsapics/tsa5.png" style="width:100%" class="zoom">
-              </div>
-              <div class="column123">
-              <img src="../media/tsapics/tsa6.png" style="width:100%" class="zoom">
-              <img src="../media/tsapics/tsa7.png" style="width:100%" class="zoom">
-              <img src="../media/tsapics/tsa8.png" style="width:100%" class="zoom">
-              </div>
-              <div class="column123">
-              <img src="../media/tsapics/tsa9.png" style="width:100%" class="zoom">
-              <img src="../media/tsapics/tsa10.png" style="width:100%" class="zoom">
-              <img src="../media/tsapics/tsa15.png" style="width:100%" class="zoom">
-              </div>
-            </div>
-          </div> -->
-          <section id="gallery">
-            <div class="container">
-              <div id="image-gallery">
-                <div class="row">
-                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                      <a href="../media/tsapics/tsa.png"><img src="../media/tsapics/tsa.png" class="img-responsive"></a>
-                      <div class="img-overlay">
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                      <a href="../media/tsapics/tsa1.png"><img src="../media/tsapics/tsa1.png" class="img-responsive"></a>
-                      <div class="img-overlay">
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                      <a href="../media/tsapics/tsa2.png"><img src="../media/tsapics/tsa2.png" class="img-responsive"></a>
-                      <div class="img-overlay">
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                      <a href="../media/tsapics/tsa3.png"><img src="../media/tsapics/tsa3.png" class="img-responsive"></a>
-                      <div class="img-overlay">
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                      <a href="../media/tsapics/tsa4.png"><img src="../media/tsapics/tsa4.png" class="img-responsive"></a>
-                      <div class="img-overlay">
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                      <a href="../media/tsapics/tsa5.png"><img src="../media/tsapics/tsa5.png" class="img-responsive"></a>
-                      <div class="img-overlay">
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                      <a href="../media/tsapics/tsa6.png"><img src="../media/tsapics/tsa6.png" class="img-responsive"></a>
-                      <div class="img-overlay">
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                      <a href="../media/tsapics/tsa7.png"><img src="../media/tsapics/tsa7.png" class="img-responsive"></a>
-                      <div class="img-overlay">
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End row -->
-              </div><!-- End image gallery -->
-            </div><!-- End container -->
-          </section>
+
         </div>
         <div id="regionals2023">
           <div class="autoHalfSplitGrid">
@@ -244,10 +183,10 @@
 
         <footer style="background:#c41700;">
               <p class="text-center">
-                  <img src="../media/logo.png" class="d-inline-block" id="logo"><br>
-                  &copy; 2023 The Green Place<br>
+                  <img src="../media/logo3.png" class="d-inline-block" id="logo"><br>
+                  &copy; 2024 The Green Place<br>
                   All rights reserved.<br>
-                  Built for the 2022-23 TSA Webmaster Competition<br>
+                  Built for the 2023-24 TSA Webmaster Competition<br>
                   <a href="about.html#about_attribution" class="bolded" style="text-decoration: none; color: #06113C;">Copyright Info</a>
               </p>
         </footer>
