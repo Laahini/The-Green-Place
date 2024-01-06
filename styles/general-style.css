@@ -40,12 +40,7 @@ footer{
         padding: 0 0 0 10px;
         font-weight: 500;
     }
-    #logo {
-        min-height: 24px;
-        min-width: 30px;
-        max-height: 36px;
-        max-width: 45px;
-    }
+  
     #termsandconditions_toppic {
         min-height: 24px;
         max-height: 45px;
@@ -374,10 +369,7 @@ nav .btn:hover{
       width:150px;
       height:150px;
     }
-    #logo {
-        height: 24px;
-        width: 30px;
-    }
+
     #termsandconditions_toppic {
         height: 24px;
     }

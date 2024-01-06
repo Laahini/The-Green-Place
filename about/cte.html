@@ -11,10 +11,58 @@
         <link rel="stylesheet" href="../styles/about-style.css">
         <link rel="stylesheet" href="../styles/particles/particles.css"/>
         <link rel="stylesheet" href="../styles/ocarousel.css"/>
+        <link href="../styles/styles.css" rel="stylesheet">
+        <link href="../styles/index.css" rel="stylesheet">
     </head>
     <body class="dark-theme">
-        
 
+      <!--NAV-->
+      <div id="nav" class="header">
+        <a class="menu-icon" href="index.html">
+          <img id="logo" src="../media/logo.png">
+        </a>
+        <div class="header-menu">
+            <a href="../index.html" class="menu-link2">Home</a>
+            <a href="../about.html" class="menu-link2">About</a>
+            <a href="../projects.html" class="menu-link2">Projects</a>
+            <a href="../careers.html" class="menu-link2">Volunteer</a>
+            <a href="../resources.html" class="menu-link2">Resources</a>
+            <a href="../contact.html" class="menu-link2">Contact</a>
+            <a href="cvtsa.html" class="menu-link2">TSA</a>
+            <a href="cte.html" class="menu-link2">CTE</a>
+        </div>
+      </div>
+
+      <nav id="mobileNav">
+        <div class="mobile-two">
+          <div class="header">
+            <div class="menu-toggle">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="mobile-nav">
+            <img src="../media/logo.png" id="logo">
+                    <ul>
+                        <li><a href="index.html" class="menu-link2">Home</a></li>
+                        <li><a href="about.html" class="menu-link2">About</a></li>
+                        <li><a href="projects.html" class="menu-link2">Projects</a></li>
+                        <li><a href="careers.html" class="menu-link2">Volunteer</a></li>
+                        <li><a href="resources.html" class="menu-link2">Resources</a></li>
+                        <li><a href="contact.html" class="menu-link2">Contact</a></li>
+                        <li><a href="about/about.html" class="menu-link2">Other</a></li>
+                    </ul>
+          </div>
+        </div>
+      </nav>
+      <script>
+        $(document).ready(function() {
+          //MOBILE TWO
+          $(".mobile-two .menu-toggle").click(function() {
+          $(this).parent().next(".mobile-nav").toggle(0 , "display");
+          });
+        });
+      </script>
         <div id="indexcarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="vidCover">
@@ -271,127 +319,16 @@
                 This is a globally recognized certificate for students with an interest in international studies and for those planning to attend school outside of the United States. This program is recognized by universities worldwide. It allows those students who wish to go aboard to have additional proof of academic excellence. In combination with the high school diploma, it provides our students with a tremendous oppurtunity.
               </p>
             </div>
-            <div class="item">
-              <br>
-              <h2>College in High School/Dual Enrollment Program</h2>
-              <p>
-                We also offer a College in High School Program which allows juniors and seniors to take college courses from the teachers in our school who are approved to teach secondary education. This does result in college credits. The Dual Enrollemnt program are taught by the university's faculty allowing students to engage in high-quality academics, build their own academic pathway, and save thousands of dollars. It earns both high school and college credits.
-              </p>
-              <br class="oppHide">
-            </div>
-          </div>
-        </div>
-
-        <div id="projectCarousel" class="projectC">
-          <h1>View Student Projects</h1>
-          <p>Students at Cumberland Valley High school have vast opportunities to discover their passions in STEM. They have the opportunity to participate in various extracurricular competitions outside of normal
-          classes. Such clubs and competitions include CV TSA, CV GWC, CV FBLA, CV Science Olympiad and more. Our school fosters an immense reputation for our students' great efforts and achievements and hopes
-          to continue this culture.</p>
-          <div id="tsapicsBanner">
-            <section id="gallery">
-              <div class="container">
-                <div id="image-gallery">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                      <div class="img-wrapper">
-                        <a href="../media/p1.jpg"><img src="../media/p1.jpg" class="img-responsive"></a>
-                        <div class="img-overlay">
-                          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                      <div class="img-wrapper">
-                        <a href="../media/p2.jpg"><img src="../media/p2.jpg" class="img-responsive"></a>
-                        <div class="img-overlay">
-                          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                      <div class="img-wrapper">
-                        <a href="../media/p3.jpg"><img src="../media/p3.jpg" class="img-responsive"></a>
-                        <div class="img-overlay">
-                          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                      <div class="img-wrapper">
-                        <a href="../media/p4.png"><img src="../media/p4.png" class="img-responsive"></a>
-                        <div class="img-overlay">
-                          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                      <div class="img-wrapper">
-                        <a href="../media/p5.png"><img src="../media/p5.png" class="img-responsive"></a>
-                        <div class="img-overlay">
-                          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                      <div class="img-wrapper">
-                        <a href="../media/p13.png"><img src="../media/p13.png" class="img-responsive"></a>
-                        <div class="img-overlay">
-                          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                      <div class="img-wrapper">
-                        <a href="../media/p7.png"><img src="../media/p7.png" class="img-responsive"></a>
-                        <div class="img-overlay">
-                          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                      <div class="img-wrapper">
-                        <a href="../media/p9.png"><img src="../media/p9.png" class="img-responsive"></a>
-                        <div class="img-overlay">
-                          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End row -->
-                </div><!-- End image gallery -->
-              </div><!-- End container -->
-            </section>
-          <!-- <br>
-            <div class="row">
-              <div class="column123" >
-              <img src="../media/p1.jpg" style="width:100%" class="zoom">
-              <img src="../media/p2.jpg" style="width:100%" class="zoom">
-              <img src="../media/p3.jpg" style="width:100%" class="zoom">
-              </div>
-              <div class="column123">
-              <img src="../media/p4.png" style="width:100%" class="zoom">
-              <img src="../media/p5.png" style="width:100%" class="zoom">
-              <img src="../media/p13.png" style="width:100%" class="zoom">
-              </div>
-              <div class="column123">
-              <img src="../media/p7.png" style="width:100%" class="zoom">
-              <img src="../media/p8.png" style="width:100%" class="zoom">
-              <img src="../media/p9.png" style="width:100%" class="zoom">
-              </div>
-              <div class="column123">
-              <img src="../media/p10.png" style="width:100%" class="zoom">
-              <img src="../media/p11.png" style="width:100%" class="zoom">
-              <img src="../media/p12.png" style="width:100%" class="zoom">
-              </div>
-            </div> -->
+            
           </div>
         </div>
 
         <footer style="background:#c41700;">
               <p class="text-center">
-                  <img src="../media/logo.png" class="d-inline-block" id="logo"><br>
-                  &copy; 2023 The Green Place<br>
+                  <img src="../media/logo3.png" class="d-inline-block" id="logo"><br>
+                  &copy; 2024 The Green Place<br>
                   All rights reserved.<br>
-                  Built for the 2022-23 TSA Webmaster Competition<br>
+                  Built for the 2023-24 TSA Webmaster Competition<br>
                   <a href="about.html#about_attribution" class="bolded" style="text-decoration: none; color: #06113C;">Copyright Info</a>
               </p>
         </footer>
