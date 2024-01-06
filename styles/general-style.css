@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@200;400&family=Archivo+Black&display=swap');
+/*General Styles*/
+/*Apply across all webpages.*/
+nav{
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+}
+p{
+  font-size: 18px;
+  font-family: 'Anuphan', sans-serif;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    transition: display 4s ease-in-out 2s;
+}
+.Odyssey_rounded_image {
+    border-radius: 50%;
+    width:250px;
+    height:250px;
+    border: 5px solid white;
+}
+footer{
+  background: rgb(255, 140, 50);
+  padding-top:2.5%;
+  padding-bottom:1%;
+}
+/*NAV*/
+/*The following line emphasizes that the styles are applied only when the screen size is atleast that of a small laptop.*/
+@media only screen and (min-width: 992px) {
+    #seperator {
+        border-right: 2px solid #ffffff;
+        padding: 0 10px 0 10px;
+        font-weight: 500;
+    }
+    #last {
+        padding: 0 0 0 10px;
+        font-weight: 500;
+    }
+    #logo {
+        min-height: 24px;
+        min-width: 30px;
+        max-height: 36px;
+        max-width: 45px;
+    }
+    #termsandconditions_toppic {
+        min-height: 24px;
+        max-height: 45px;
+    }
+    #company {
+        font-size: 28px;
+        font-weight: 600;
+    }
+}
+
+
+
+/*The following line emphasizes that the styles are applied only when the screen size is lesser than that of a small laptop.*/
+
+
+
+
+#name{
+    height: 35px;
+    width: 120px;
+    margin-left:5px;
+}
+#footer_name{
+    height: 24px;
+    width: 70px;
+}
+#tour_footer_name{
+    height: 24px;
+    width: 70px;
+}
+.bg_Odyssey1 {
+    background-color: #FF8C32;
+}
+.bg_Odyssey2 {
+    background-color: #FF8C32;
+}
+.bg_Odyssey3 {
+    background-color: #FF8C32;
+}
+.text_Odyssey1 {
+    color: rgb(255, 140, 50);
+
+}
+.text_Odyssey2 {
+    color: #ff9249;
+}
+.text_Odyssey3 {
+    color: #ff6647;
+}
+.text_logogradient {
+    color: transparent;
+    background: linear-gradient(to right, #feca70, #fc924c, #FF8C32);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+}
+body {
+    color: #ffffff;
+    background-color: rgb(42, 37, 80);
+    font-family: 'Montserrat', sans-serif;
+}
+.function_performing_link:hover {
+    cursor: pointer;
+}
+.nav-link{
+    display: block;
+    padding-bottom: .25rem;
+    position: relative;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.25s ease-out;
+}
+.nav-link:hover::before{
+    width: 100%;
+}
+.btn{
+    border-radius: 8px;
+    background-color: #FF8C32;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: white;
+    display: block;
+    font-family: 'Kanit', sans-serif;
+
+}
+.btn:hover{
+    background:rgb(6, 17, 60);
+    color:white;
+}
+nav .btn:hover{
+  background:#EEEEEE;
+  color:rgb(6, 17, 60);
+}
+
+  /*Toggle Button Styles*/
+  .toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  .toggle input {
+    display: none;
+  }
+
+  .toggle label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #292b2c;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+    /*Toggle Styles*/
+
+  .toggle label:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    /*Property below sets the color/background image of the circle when toggle is unchecked; i.e., dark mode*/
+    background-image: url(../img/dark_mode_toggle.jpg);
+    background-size: 100% 100%;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  .toggle input:checked + label {
+    background-color: #d7dee4;
+  }
+
+  .toggle input:checked + label:before {
+
+    background-image: url(../img/light_mode_toggle.png);
+    background-size: 100% 100%;
+    background-color: white;
+    transform: translateX(26px);
+  }
+  .light-theme{
+    background-color: rgb(221, 221, 221);
+    color: rgb(6, 17, 60);
+  }
+  .toggle-text {
+    margin-left: 10px;
+    }
+          .toggle {
+            margin-left: 20px;
+          }
+     .toggle-text{
+        color:white
+     }
+
+   body.light-theme{
+    background-color:whitesmoke;
+    color:black;
+   }
+   footer.light-theme{
+    background-color: #06113C;
+    color:white;
+   }
+   hr.light-theme{
+     background-color: #06113C;
+     color:#06113C;
+   }
+
+.dark-theme{
+    background-color: rgb(6, 17, 60);
+    color: white;
+}
+.main_pagetop_navbar_background {
+
+    background-color: #131c3d;
+
+}
+
+.lead{
+    font-weight: 800px;
+}
+.scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5px; /* adjust height as needed */
+    z-index: 9999; /* make sure the scroll indicator is on top*/
+  }
+
+  .scroll-progress {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #feca70, #fc924c, #fd401a);
+  }
+
+.bolded
+{
+  font-weight: 800;
+}
+
+
+
+
+.halfSplitGrid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    padding: 0% 10%;
+}
+
+.autoHalfSplitGrid {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100%;
+    padding: 10% 5%;
+}
+
+.fourSplitGrid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    padding: 5% 5%;
+}
+
+.autoThirdGrid {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+}
+.splitGrid2_2 {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 50% 50%;
+    padding: 1% 1%;
+}
+
+.threeFourthGrid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto;
+    grid-column-gap:1%;
+}
+
+.oneToThreeGrid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    padding: 5% 5%;
+}
+
+.threetoTwoGrid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 5% 5%;
+}
+
+.twoToThreeGrid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    padding: 5% 5%;
+}
+
+.splitGrid3 {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 33% 34% 33%;
+    padding: 1% 1%;
+}
+
+.splitGrid2by2 {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 1% 1%;
+}
+
+.orange
+{
+  color: rgb(255, 140, 50);
+}
+
+@media only screen and (max-width: 992px) {
+    .p-5
+    {
+      padding:0%;
+    }
+    p{
+      font-size: 12px;
+    }
+    .display-5
+    {
+      font-size: 18px;
+    }
+    .lead{
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .Odyssey_rounded_image
+    {
+      width:150px;
+      height:150px;
+    }
+    #logo {
+        height: 24px;
+        width: 30px;
+    }
+    #termsandconditions_toppic {
+        height: 24px;
+    }
+    #company {
+        font-weight: 600;
+    }
+    #last {
+        background-color: var(--bg-dark);
+    }
+    #name{
+        height: 30px;
+        width: 100px;
+        margin-left:2px;
+    }
+    .autoThirdGrid
+    {
+      display:grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto;
+      grid-gap: 1%;
+    }
+    .splitGrid2_2
+    {
+      display:grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto;
+      padding:1% 1%;
+    }
+    .halfSplitGrid {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        padding: 0% 10%;
+    }
+    .formAutoHalfSplit
+    {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto;
+      padding: 2% 2%;
+      grid-gap: 1%;
+    }
+    .autoHalfSplitGrid
+    {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto;
+
+    }
+    .threeFourthGrid
+    {
+      position:relative;
+      display:grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+    }
+}
