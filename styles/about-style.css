@@ -406,12 +406,13 @@ video{
     height: 50px;
     cursor: pointer;
     border: 3px solid white;
-    background-color: #EEEEEE;
+    background-color: blue;
+    color:black;
     user-select: none;
     border-radius: 10px;
 }
 .question-wrap label{
-  background: rgb(6, 17, 60,0.5);
+  background: black;
   color:white;
 }
 .wrapper label div:first-child {
@@ -419,6 +420,7 @@ video{
     line-height: 45px;
     margin-left: 10px;
     font-size: 1.2em;
+    color:black;
 }
 
 .cross{
